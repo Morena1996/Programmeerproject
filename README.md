@@ -8,4 +8,5 @@ Problem statement
 Solution
 --------
 
-Door middel van drie verschillende *linked views* ga ik het antwoord op bovenstaand vraagstuk weergeven, waarbij ik een kaart van Nederland met daarop zichtbaar het aantal kerkgangers per provincie verbind aan een *bar chart* met daarop de kerkelijke gezindte van deze groep. 
+Door middel van o.a. een kaart van Nederland met daarop zichtbaar het aantal kerkgangers per provincie, gelinkt aan een *bar chart* met de kerkelijke gezindte van de op de kaart geselecteerde provincie, ga ik antwoord geven op bovenstaand vraagstuk. Verder kan de gebruiker met behulp van een *drop down* het gewenste jaar selecteren en is er op de pagina een tabel te vinden waarin per jaar de informatie over kerkbezoek en kerkelijke gezindte van de gelesecteerde provincie terug te vinden zijn. De derde *linked view* bestaat uit een *pie chart* waarin, afhankelijk van de selectie die de gebruiker maakt met behulp van een *check box*, de verdeling van de grootte van de huishoudens of de verdeling van ... in de op de kaart selecteerde provincie wordt weergegeven. 
+
