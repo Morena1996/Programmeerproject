@@ -21,4 +21,9 @@ Lijst van de *external components* waar ik gebruik van maak:
 * d3.chart (https://github.com/misoproject/d3.chart)
 * d3pie (https://github.com/benkeen/d3pie)
 * d3-bar (https://github.com/tj/d3-bar)
+* GeoChart
+
+![](doc/programmeerproject.png)
+
+
  
