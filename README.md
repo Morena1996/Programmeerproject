@@ -8,4 +8,4 @@ Problem statement
 Solution
 --------
 
-
+Door middel van drie verschillende *linked views* ga ik het antwoord op bovenstaand vraagstuk weergeven, waarbij ik een kaart van Nederland met daarop zichtbaar het aantal kerkgangers per provincie verbind aan een *bar chart* met daarop de kerkelijke gezindte van deze groep. 
