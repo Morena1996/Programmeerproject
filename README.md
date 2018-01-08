@@ -8,7 +8,13 @@ Probleemstelling
 Oplossing
 --------
 
-Door middel van o.a. een kaart van Nederland met daarop zichtbaar het aantal kerkgangers per provincie, gelinkt aan een *bar chart* met de kerkelijke gezindte van de op de kaart geselecteerde provincie, ga ik antwoord geven op bovenstaand vraagstuk. Verder kan de gebruiker met behulp van een *drop down* het gewenste jaar selecteren en is er op de pagina een tabel te vinden waarin per jaar (2010 of 2015) de informatie over kerkbezoek en kerkelijke gezindte van de gelesecteerde provincie terug te vinden zijn. De derde *linked view* bestaat uit een *pie chart* waarin, afhankelijk van de selectie die de gebruiker maakt met behulp van een *check box*, de verdeling van huishoudens met of zonder kinderen ofwel de verdeling van de burgerlijke staat in de op de kaart selecteerde provincie wordt weergegeven. 
+Door middel van o.a. een kaart van Nederland met daarop zichtbaar het aantal kerkgangers per provincie, gelinkt aan een *bar chart* met de kerkelijke gezindte van de op de kaart geselecteerde provincie, ga ik antwoord geven op bovenstaand vraagstuk. Verder kan de gebruiker met behulp van een *check box* het gewenste jaar selecteren en is er op de pagina een tabel te vinden waarin per jaar (2010 of 2015) de informatie over kerkbezoek en kerkelijke gezindte van de gelesecteerde provincie terug te vinden zijn. De derde *linked view* bestaat uit een *pie chart* waarin, afhankelijk van de selectie die de gebruiker maakt met behulp van een *drop down*, de verdeling van huishoudens met of zonder kinderen ofwel de verdeling van de burgerlijke staat in de op de kaart selecteerde provincie wordt weergegeven. 
+
+De *minimum viable product* is bijna gelijk aan het bovenstaande, aangezien het project drie *linked views* (*bar chart*, kaart en *pie chart*) moet bevatten met in ieder geval twee interactieve componenten (*check box* en *drop down*). Een extra aanvulling is de gelinkte tabel waarin de data nog eens overzichtelijk wordt weergegeven. 
+
+Hieronder vind je een schets met mijn idee. De plekken waar de verschillende *linked views* nu zijn geplaatst zal nog worden veranderd, net zoals vele andere dingen. Maar dit geeft wel een idee:
+
+![](doc/image.png)
 
 Randvoorwaarden
 -------------
@@ -23,7 +29,7 @@ Lijst van de *external components* waar ik gebruik van maak:
 * d3-bar (https://github.com/tj/d3-bar)
 * GeoChart
 
-![](doc/programmeerproject.png)
+
 
 
  
