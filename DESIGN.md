@@ -36,4 +36,5 @@ In de JavaScript file staan de volgende functies:
 
 Lijst van API's of D3 plugins
 ------------------------------
-
+* D3.js (http://d3js.org/d3.v3.min.js)
+* d3-tip (http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js)
