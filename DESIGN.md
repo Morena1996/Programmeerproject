@@ -11,7 +11,7 @@ Diagram met overzicht technische componenten
 
 Ik heb een diagram gemaakt met de technische componenten van mijn project en hoe deze met elkaar verbonden zijn:
 
-![](doc/diagram.png)
+![](doc/diagram.jpeg)
 
 * JavaScript file: ontkerkelijking.js
 * HTML file: ontkerkelijking.html
