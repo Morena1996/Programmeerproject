@@ -14,7 +14,7 @@ De *minimum viable product* is bijna gelijk aan het bovenstaande, aangezien het 
 
 Hieronder vind je een schets met mijn idee. De plekken waar de verschillende *linked views* nu zijn geplaatst zal nog worden veranderd, net zoals vele andere dingen. Maar dit geeft wel een idee:
 
-![](doc/programmeerproject.png)
+![](afbeeldingen/programmeerproject.png)
 
 Randvoorwaarden
 ---------------
