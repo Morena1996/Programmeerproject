@@ -34,6 +34,7 @@
 * File names
 
 	File names for markdown files should always be in capitals and all other filenames should be lower case.
-	
+
+
 
 
