@@ -17,7 +17,9 @@
 	There should always be spaces around operators (x = y + z).
 
 *White spaces
-	
+	A single blank line appears between statements and between consecutive members or initializers of a class.
+
 *File names
+	File names for markdown files should always be in capitals and all other filenames should be lower case.
 
 
