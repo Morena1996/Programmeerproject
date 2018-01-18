@@ -1,8 +1,8 @@
 .bar {
-		fill: #B8B8B8;
+		fill: #045681;
 	 }
 .bar:hover {
-				fill: #FF5733;
+				fill: #bdf5bd;
 			}
 			.axis--x path {
 			  display: none;

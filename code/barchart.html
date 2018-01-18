@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
 <html>
-	<head>
+	<head lang="en">
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="barchart.css">
 		<title>Ontkerkelijking in Nederland: Bar chart</title>
-		<script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
+		<script src="https://d3js.org/d3.v4.js" charset="utf-8" language="JavaScript"></script>
+		<script src="gauge.js" language="JavaScript"></script>
 	</head>
 	<body>
+		<svg id="fillgauge" width="150%" height="100" onclick="gauge1.update(NewValue());"></svg>
 		<svg class="chart"></svg>
 		<script src="barchart.js"></script>
+		    <script language="JavaScript">
+        var gauge = loadGauge("fillgauge", 55);
+
+        function NewValue(){
+            if(Math.random() > .5){
+                return Math.round(Math.random()*100);
+            } else {
+                return (Math.random()*100).toFixed(1);
+            }
+        }
+    </script>
 	</body>
 </html>

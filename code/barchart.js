@@ -1,10 +1,10 @@
 /*
-Dataprocessing
+Programmeerproject
 Name: Morena Bastiaansen
 Student number: 10725792
-Homework 3: D3
-barchart3.js
-Bestand met javascript code voor de bar chart over de verdelingen van kerkelijke gezindten
+
+barchart.js
+File with JavaScript code for bar chart about religion in the Netherlands
 */
 
 
@@ -47,8 +47,6 @@ function get_data(file_name, chart, x, y) {
 
 	// functions to control hovering
 	function mouse_hover(d) {
-		d3.select(this)
-			.style("fill", "#FF5733");
 		chart.select("#g"+d.gezindte)
 			.append("text")
 				.attr("id", "t" + d.gezindte)
@@ -58,8 +56,6 @@ function get_data(file_name, chart, x, y) {
 	}
 
 	function mouse_off(d) {
-		d3.select(this)
-			.style("fill", "#B8B8B8");
 		d3.select("#t" + d.gezindte)
 			.remove();
 	}
