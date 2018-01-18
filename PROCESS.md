@@ -10,6 +10,12 @@ Once the data was fully usable, I was able to start with the first figure: the b
 Another problem I encountered today was that the browser would not load my data in the right way. After asking a staff member for help, we found some minor detail in my javascript file caused the error. This was solved quickly. 
 
 
-
 # day 3
+
+Today I finished the second view: the fill gauge. I had problems with positioning the gauge, but besides that, it was rather easily done by using an example. Then I also tried to combine the bar chart and the gauge in one webpage, but this didn't work out yet. I also wanted to change the colours of the bar chart but this didn't work out as well. My plan is to ask the staff for help tomorrow.
+
+
+# day 4
+
+Today my plan was to make the third view: the map. Due to the huge chaos on Science Park (the roof was blown off) and the fact that I couldn't ask any questions all day, I was not able to finish this one. I assume that this won't affect my grade, considering the very exceptional circumstances.
 
