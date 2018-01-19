@@ -12,10 +12,10 @@ Another problem I encountered today was that the browser would not load my data 
 
 # day 3
 
-Today I finished the second view: the fill gauge. I had problems with positioning the gauge, but besides that, it was rather easily done by using an example. 
+Today I finished the second view: the fill gauge. I had problems with positioning the gauge, but besides that, it was rather easily done by using an example. I also tried to optimize the bar chart and improve some small difficulties, like the fact that not all numbers show when you hover over the bars and 
 
 
 # day 4
 
-Today my plan was to make the third view: the map. Due to the huge chaos on Science Park (the roof was blown off) and the fact that I couldn't ask any questions all day, I was not able to finish this one. I assume that this won't affect my grade, considering the very exceptional circumstances. Another thing I was not able to ask was how to combine all views in one webpage, so this is also something I'll have to put off until Monday.
+Today my plan was to make the third view: the map. Due to the huge chaos on Science Park (the roof was blown off), the fact that I was stuck on Science Park for a few hours and the fact that I couldn't ask any questions all day, I was not able to finish this one. Today I was planning on asking how to find the map in the first place, because Google did not make me that much wiser on this topic and I hoped someone from the staff would be able to help me start off. I assume that this won't affect my grade, considering the very exceptional circumstances. Another thing I was not able to ask was how to combine all views in one webpage, so this is also something I'll have to put off until Monday.
 
