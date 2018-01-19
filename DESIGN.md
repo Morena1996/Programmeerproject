@@ -13,7 +13,11 @@ Ik heb een diagram gemaakt met de technische componenten van mijn project en hoe
 
 ![](afbeeldingen/diagram.jpeg)
 
-* JavaScript file: ontkerkelijking.js
+* JavaScript files: 
+	- barchart.js
+	- gauge.js
+	- map.js
+	- table.js
 * HTML file: ontkerkelijking.html
 * CSS file: ontkerkelijking.css
 
