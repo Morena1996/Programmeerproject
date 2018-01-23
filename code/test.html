@@ -1,0 +1,18 @@
+		<div id="container2"></div>
+		<svg id="fillgauge" width="100%" height="500" onclick="gauge1.update(NewValue());"></svg>
+		<script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+		<script src="gauge.js"></script>
+		<script language="JavaScript">
+	        var gauge = loadGauge("fillgauge", 55);
+
+	        function NewValue(){
+	            if(Math.random() > .5){
+	                return Math.round(Math.random()*100);
+	            } else {
+	                return (Math.random()*100).toFixed(1);
+	            }
+	        }
+    	</script>
+
+    	      	.attr("transform", "translate(0," + height + ")")
+      	.call(d3.axisBottom(x))

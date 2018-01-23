@@ -68,8 +68,9 @@ function get_data(file_name, chart, x, y) {
 		.text("Verdelingen kerkelijke gezindten");
 		
   	chart.append("g")
-      	.attr("transform", "translate(0," + height + ")")
-      	.call(d3.axisBottom(x))
+    	.call(d3.svg.axis()
+        	.scale(x)
+        	.orient("bottom"));
 
     chart.append("text")             
     	.attr("transform",
@@ -79,7 +80,9 @@ function get_data(file_name, chart, x, y) {
       .text("Gezindte");
 
     chart.append("g")
-    	.call(d3.axisLeft(y))
+    	.call(d3.svg.axis()
+        	.scale(y)
+        	.orient("left"));
 
     chart.append("text")             
       .attr("transform",
@@ -100,11 +103,11 @@ function make_chart(file_name) {
 .append("g")
 	.attr("transform", "translate("+margin+","+margin+")");
 
-	var x = d3.scaleBand()
-		.range([0, width])
+	var x = d3.scale.ordinal()
+		.rangeBands([0, width])
 		.paddingInner(0.1)
 		.paddingOuter(0.2);
-	var y = d3.scaleLinear()
+	var y = d3.scale.Linear()
 		.range([height,0]);
 
 	get_data(file_name, chart, x, y);

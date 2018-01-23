@@ -1,192 +1,24 @@
-Geen ;61,00;Groningen;2010,00
-Totaal;39,00;Groningen;2010,00
-Rooms-Katholiek;5,00;Groningen;2010,00
-Protestantse Kerk in Nederland;7,00;Groningen;2010,00
-Nederlands Hervormd;9,00;Groningen;2010,00
-Gereformeerd;10,00;Groningen;2010,00
-Islam;1,00;Groningen;2010,00
-Overig;6,00;Groningen;2010,00
-Geen ;69,00;Groningen;2015,00
-Totaal;31,00;Groningen;2015,00
-Rooms-Katholiek;5,00;Groningen;2015,00
-Protestantse Kerk in Nederland;8,00;Groningen;2015,00
-Nederlands Hervormd;5,00;Groningen;2015,00
-Gereformeerd;6,00;Groningen;2015,00
-Islam;1,00;Groningen;2015,00
-Overig;6,00;Groningen;2015,00
-Geen ;55,00;Friesland;2010,00
-Totaal;45,00;Friesland;2010,00
-Rooms-Katholiek;6,00;Friesland;2010,00
-Protestantse Kerk in Nederland;16,00;Friesland;2010,00
-Nederlands Hervormd;10,00;Friesland;2010,00
-Gereformeerd;8,00;Friesland;2010,00
-Islam;1,00;Friesland;2010,00
-Overig;4,00;Friesland;2010,00
-Geen ;58,00;Friesland;2015,00
-Totaal;42,00;Friesland;2015,00
-Rooms-Katholiek;7,00;Friesland;2015,00
-Protestantse Kerk in Nederland;14,00;Friesland;2015,00
-Nederlands Hervormd;6,00;Friesland;2015,00
-Gereformeerd;7,00;Friesland;2015,00
-Islam;1,00;Friesland;2015,00
-Overig;7,00;Friesland;2015,00
-Geen ;55,00;Drenthe;2010,00
-Totaal;45,00;Drenthe;2010,00
-Rooms-Katholiek;9,00;Drenthe;2010,00
-Protestantse Kerk in Nederland;10,00;Drenthe;2010,00
-Nederlands Hervormd;14,00;Drenthe;2010,00
-Gereformeerd;6,00;Drenthe;2010,00
-Islam;1,00;Drenthe;2010,00
-Overig;5,00;Drenthe;2010,00
-Geen ;62,00;Drenthe;2015,00
-Totaal;38,00;Drenthe;2015,00
-Rooms-Katholiek;9,00;Drenthe;2015,00
-Protestantse Kerk in Nederland;8,00;Drenthe;2015,00
-Nederlands Hervormd;11,00;Drenthe;2015,00
-Gereformeerd;5,00;Drenthe;2015,00
-Islam;1,00;Drenthe;2015,00
-Overig;4,00;Drenthe;2015,00
-Geen ;39,00;Overijssel;2010,00
-Totaal;61,00;Overijssel;2010,00
-Rooms-Katholiek;26,00;Overijssel;2010,00
-Protestantse Kerk in Nederland;8,00;Overijssel;2010,00
-Nederlands Hervormd;14,00;Overijssel;2010,00
-Gereformeerd;6,00;Overijssel;2010,00
-Islam;3,00;Overijssel;2010,00
-Overig;4,00;Overijssel;2010,00
-Geen ;42,00;Overijssel;2015,00
-Totaal;58,00;Overijssel;2015,00
-Rooms-Katholiek;23,00;Overijssel;2015,00
-Protestantse Kerk in Nederland;8,00;Overijssel;2015,00
-Nederlands Hervormd;12,00;Overijssel;2015,00
-Gereformeerd;6,00;Overijssel;2015,00
-Islam;3,00;Overijssel;2015,00
-Overig;6,00;Overijssel;2015,00
-Geen ;53,00;Flevoland;2010,00
-Totaal;47,00;Flevoland;2010,00
-Rooms-Katholiek;12,00;Flevoland;2010,00
-Protestantse Kerk in Nederland;9,00;Flevoland;2010,00
-Nederlands Hervormd;5,00;Flevoland;2010,00
-Gereformeerd;6,00;Flevoland;2010,00
-Islam;5,00;Flevoland;2010,00
-Overig;10,00;Flevoland;2010,00
-Geen ;55,00;Flevoland;2015,00
-Totaal;45,00;Flevoland;2015,00
-Rooms-Katholiek;12,00;Flevoland;2015,00
-Protestantse Kerk in Nederland;6,00;Flevoland;2015,00
-Nederlands Hervormd;3,00;Flevoland;2015,00
-Gereformeerd;7,00;Flevoland;2015,00
-Islam;7,00;Flevoland;2015,00
-Overig;10,00;Flevoland;2015,00
-Geen ;42,00;Gelderland;2010,00
-Totaal;59,00;Gelderland;2010,00
-Rooms-Katholiek;24,00;Gelderland;2010,00
-Protestantse Kerk in Nederland;8,00;Gelderland;2010,00
-Nederlands Hervormd;14,00;Gelderland;2010,00
-Gereformeerd;4,00;Gelderland;2010,00
-Islam;3,00;Gelderland;2010,00
-Overig;5,00;Gelderland;2010,00
-Geen ;47,00;Gelderland;2015,00
-Totaal;53,00;Gelderland;2015,00
-Rooms-Katholiek;21,00;Gelderland;2015,00
-Protestantse Kerk in Nederland;7,00;Gelderland;2015,00
-Nederlands Hervormd;12,00;Gelderland;2015,00
-Gereformeerd;4,00;Gelderland;2015,00
-Islam;4,00;Gelderland;2015,00
-Overig;5,00;Gelderland;2015,00
-Geen ;48,00;Utrecht;2010,00
-Totaal;52,00;Utrecht;2010,00
-Rooms-Katholiek;17,00;Utrecht;2010,00
-Protestantse Kerk in Nederland;8,00;Utrecht;2010,00
-Nederlands Hervormd;9,00;Utrecht;2010,00
-Gereformeerd;5,00;Utrecht;2010,00
-Islam;6,00;Utrecht;2010,00
-Overig;6,00;Utrecht;2010,00
-Geen ;55,00;Utrecht;2015,00
-Totaal;45,00;Utrecht;2015,00
-Rooms-Katholiek;13,00;Utrecht;2015,00
-Protestantse Kerk in Nederland;8,00;Utrecht;2015,00
-Nederlands Hervormd;8,00;Utrecht;2015,00
-Gereformeerd;5,00;Utrecht;2015,00
-Islam;6,00;Utrecht;2015,00
-Overig;7,00;Utrecht;2015,00
-Geen ;61,00;Noord-Holland;2010,00
-Totaal;39,00;Noord-Holland;2010,00
-Rooms-Katholiek;19,00;Noord-Holland;2010,00
-Protestantse Kerk in Nederland;4,00;Noord-Holland;2010,00
-Nederlands Hervormd;3,00;Noord-Holland;2010,00
-Gereformeerd;2,00;Noord-Holland;2010,00
-Islam;5,00;Noord-Holland;2010,00
-Overig;6,00;Noord-Holland;2010,00
-Geen ;63,00;Noord-Holland;2015,00
-Totaal;37,00;Noord-Holland;2015,00
-Rooms-Katholiek;16,00;Noord-Holland;2015,00
-Protestantse Kerk in Nederland;4,00;Noord-Holland;2015,00
-Nederlands Hervormd;3,00;Noord-Holland;2015,00
-Gereformeerd;2,00;Noord-Holland;2015,00
-Islam;7,00;Noord-Holland;2015,00
-Overig;6,00;Noord-Holland;2015,00
-Geen ;49,00;Zuid-Holland;2010,00
-Totaal;51,00;Zuid-Holland;2010,00
-Rooms-Katholiek;16,00;Zuid-Holland;2010,00
-Protestantse Kerk in Nederland;7,00;Zuid-Holland;2010,00
-Nederlands Hervormd;9,00;Zuid-Holland;2010,00
-Gereformeerd;4,00;Zuid-Holland;2010,00
-Islam;8,00;Zuid-Holland;2010,00
-Overig;7,00;Zuid-Holland;2010,00
-Geen ;52,00;Zuid-Holland;2015,00
-Totaal;48,00;Zuid-Holland;2015,00
-Rooms-Katholiek;14,00;Zuid-Holland;2015,00
-Protestantse Kerk in Nederland;7,00;Zuid-Holland;2015,00
-Nederlands Hervormd;8,00;Zuid-Holland;2015,00
-Gereformeerd;4,00;Zuid-Holland;2015,00
-Islam;8,00;Zuid-Holland;2015,00
-Overig;8,00;Zuid-Holland;2015,00
-Geen ;44,00;Zeeland;2010,00
-Totaal;56,00;Zeeland;2010,00
-Rooms-Katholiek;18,00;Zeeland;2010,00
-Protestantse Kerk in Nederland;11,00;Zeeland;2010,00
-Nederlands Hervormd;12,00;Zeeland;2010,00
-Gereformeerd;8,00;Zeeland;2010,00
-Islam;2,00;Zeeland;2010,00
-Overig;5,00;Zeeland;2010,00
-Geen ;47,00;Zeeland;2015,00
-Totaal;53,00;Zeeland;2015,00
-Rooms-Katholiek;16,00;Zeeland;2015,00
-Protestantse Kerk in Nederland;7,00;Zeeland;2015,00
-Nederlands Hervormd;14,00;Zeeland;2015,00
-Gereformeerd;8,00;Zeeland;2015,00
-Islam;2,00;Zeeland;2015,00
-Overig;8,00;Zeeland;2015,00
-Geen ;32,00;Noord-Brabant;2010,00
-Totaal;69,00;Noord-Brabant;2010,00
-Rooms-Katholiek;55,00;Noord-Brabant;2010,00
-Protestantse Kerk in Nederland;3,00;Noord-Brabant;2010,00
-Nederlands Hervormd;2,00;Noord-Brabant;2010,00
-Gereformeerd;1,00;Noord-Brabant;2010,00
-Islam;4,00;Noord-Brabant;2010,00
-Overig;3,00;Noord-Brabant;2010,00
-Geen ;39,00;Noord-Brabant;2015,00
-Totaal;61,00;Noord-Brabant;2015,00
-Rooms-Katholiek;48,00;Noord-Brabant;2015,00
-Protestantse Kerk in Nederland;3,00;Noord-Brabant;2015,00
-Nederlands Hervormd;2,00;Noord-Brabant;2015,00
-Gereformeerd;1,00;Noord-Brabant;2015,00
-Islam;5,00;Noord-Brabant;2015,00
-Overig;3,00;Noord-Brabant;2015,00
-Geen ;21,00;Limburg;2010,00
-Totaal;79,00;Limburg;2010,00
-Rooms-Katholiek;72,00;Limburg;2010,00
-Protestantse Kerk in Nederland;1,00;Limburg;2010,00
-Nederlands Hervormd;1,00;Limburg;2010,00
-Gereformeerd;1,00;Limburg;2010,00
-Islam;3,00;Limburg;2010,00
-Overig;2,00;Limburg;2010,00
-Geen ;28,00;Limburg;2015,00
-Totaal;72,00;Limburg;2015,00
-Rooms-Katholiek;64,00;Limburg;2015,00
-Protestantse Kerk in Nederland;1,00;Limburg;2015,00
-Nederlands Hervormd;1,00;Limburg;2015,00
-Gereformeerd;0,00;Limburg;2015,00
-Islam;4,00;Limburg;2015,00
-Overig;2,00;Limburg;2015,00
+Groningen;39;2010;;31;;;
+Groningen;31;2015;;79;;;
+Friesland;45;2010;;;;;
+Friesland;42;2015;;;;30-40;
+Drenthe;45;2010;;;;40-50;
+Drenthe;38;2015;;;;50-60;
+Overijssel;61;2010;;;;60-70;
+Overijssel;58;2015;;;;;
+Flevoland;47;2010;;;;;
+Flevoland;45;2015;;;;;
+Gelderland;59;2010;;;;;
+Gelderland;53;2015;;;;;
+Utrecht;52;2010;;;;;
+Utrecht;45;2015;;;;;
+Noord-Holland;39;2010;;;;;
+Noord-Holland;37;2015;;;;;
+Zuid-Holland;51;2010;;;;;
+Zuid-Holland;48;2015;;;;;
+Zeeland;56;2010;;;;;
+Zeeland;53;2015;;;;;
+Noord-Brabant;69;2010;;;;;
+Noord-Brabant;61;2015;;;;;
+Limburg;79;2010;;;;;
+Limburg;72;2015;;;;;

@@ -29,5 +29,15 @@ Today I was sick in bed and thus wasn't able to do anything.
 
 Today I am still not feeling very good, but I have to catch up on the time I lost yesterday and also the deadline on Friday is coming closer. My plan today is to put everything in one HTML and start with the map of the Netherlands.
 
+Today I encountered an annoying problem: I used v3 for the map and v4 for the bar chart which resulted in the fact that when i combined the two into one html, one of the two would not work. So I changed some functions in barchart.js into v3 functions so it would still work together. 
+
+Then I encountered another problem: my data for the map of the Netherlands (average frequency of church visits per province) is not usable, because the differences are not big enough. So all provinces would have the same colour on the map... So I had to change something. I fixed it by using the data of the different religions per province (kerkelijke gezindten). So now the map will show the average amount of people per province that count themselves to a religion. The bar chart will now show the data of the frequency of the church visits.
+
+Also I found a svg map for the Netherlands, but I'm still working on making it applicable for my web page. 
+
+So today I found a map, changed the use of my data, prepared some data and combined the two visuals into one web page. 
+
+
+# day 7
 
 
