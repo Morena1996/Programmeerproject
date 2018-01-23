@@ -17,7 +17,17 @@ Today I finished the second view: the fill gauge. I had problems with positionin
 
 # day 4
 
-Today my plan was to make the third view: the map. Due to the huge chaos on Science Park (the roof was blown off), the fact that I was stuck on Science Park for a few hours and the fact that I couldn't ask any questions all day, I was not able to finish this one. Today I was planning on asking how to find the map in the first place, because Google did not make me that much wiser on this topic and I hoped someone from the staff would be able to help me start off. I assume that this won't affect my grade, considering the very exceptional circumstances. Another thing I was not able to ask was how to combine all views in one webpage, so this is also something I'll have to put off until Monday. 
+Today my plan was to make the third view: the map. Due to the huge chaos on Science Park (the roof was blown off), the fact that I was stuck for a few hours and the fact that I couldn't ask any questions all day, I was not able to finish this one. Today I was planning on asking how to find the map in the first place, because Google did not make me that much wiser on this topic and I hoped someone from the staff would be able to help me start off. I assume that this won't affect my grade, considering the very exceptional circumstances. Another thing I was not able to ask was how to combine all views in one webpage, so this is also something I'll have to put off until Monday. 
 
 Today I also put the data on marriages (for the gauge) per province and per year in the right place and then converted it to json (gehuwd.json). 
+
+# day 5
+
+Today I was sick in bed and thus wasn't able to do anything. 
+
+# day 6
+
+Today I am still not feeling very good, but I have to catch up on the time I lost yesterday and also the deadline on Friday is coming closer. My plan today is to put everything in one HTML and start with the map of the Netherlands.
+
+
 
