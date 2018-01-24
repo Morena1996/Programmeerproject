@@ -1,3 +1,7 @@
+# day 1 
+
+Today I worked on my project proposal and turned it in. 
+
 # day 1
 
 Today I found my data on www.CBS.nl. I downloaded the data in CSV format and spent some time putting everything in the right place (columns, rows, different variables, etc.).). After this I used a function that I wrote (convertCSV2JSON.py) to convert the data to JSON data. 
@@ -39,5 +43,15 @@ So today I found a map, changed the use of my data, prepared some data and combi
 
 
 # day 7
+
+Today I found out that the svg map I found yesterday was not usable. So I searched the web for quite a long time for another one, but only found usable maps you have to pay for. Then I asked the staff and they gave me a website (www.datamap.github.io). 
+
+I also found out that my browser would not update my script properly by using the refresh button, because it loads what's in the cache. Then someone from the staff told me how to "hard refresh", so that problem was fixed as well.
+
+I also tried to change my bar chart script from v4 of D3 to v3, because my other visuals are in v3. 
+
+
+
+
 
 

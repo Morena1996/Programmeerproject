@@ -40,7 +40,7 @@ function get_data(file_name, chart, x, y) {
 		.attr("class", "bar")
 		.attr("x", function(d) { return x(d.gezindte); })
 		.attr("y", function(d) { return y(d.percentage); })
-		.attr("width", x.bandwidth())
+		.attr("width", x.rangeBand())
       	.attr("height", function(d) { return height - y(d.percentage); })
 		.on("mouseover", mouse_hover)
 		.on("mouseout", mouse_off);
@@ -104,11 +104,9 @@ function make_chart(file_name) {
 	.attr("transform", "translate("+margin+","+margin+")");
 
 	var x = d3.scale.ordinal()
-		.rangeBands([0, width])
-		.paddingInner(0.1)
-		.paddingOuter(0.2);
-	var y = d3.scale.Linear()
-		.range([height,0]);
+		.rangePoints([0, width])
+	var y = d3.scale.linear()
+		.range([height, 0]);
 
 	get_data(file_name, chart, x, y);
 }
