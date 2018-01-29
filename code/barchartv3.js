@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<head>
-<style>
-
-.rectangle {
-	fill: steelblue;
-}
-.rectangle:hover {
-	fill: orange;
-}
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-</style>
-</head>
-<body>
-<div id="drop" align=center></div>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
-
 var margin = {top: 80, right: 180, bottom: 80, left: 180},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -36,14 +8,14 @@ var svg = d3.select("body").append("svg")
 	.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("VotingInformation.tsv", function(error, data){
+d3.json("kerkelijke_bezoeken.json", function(error, data){
 
 	// filter year
-	var data = data.filter(function(d){return d.Year == '2012';});
+	var data = data.filter(function(d){return d.provincie == 'Groningen';});
 	// Get every column value
 	var elements = Object.keys(data[0])
 		.filter(function(d){
-			return ((d != "Year") & (d != "State"));
+			return ((d != "provincie") & (d != "frequentie"));
 		});
 	var selection = elements[0];
 
@@ -54,7 +26,7 @@ d3.tsv("VotingInformation.tsv", function(error, data){
 			.range([height, 0]);
 
 	var x = d3.scale.ordinal()
-			.domain(data.map(function(d){ return d.State;}))
+			.domain(data.map(function(d){ return d.frequentie;}))
 			.rangeBands([0, width]);
 
 
@@ -99,7 +71,7 @@ d3.tsv("VotingInformation.tsv", function(error, data){
 		})
 		.append("title")
 		.text(function(d){
-			return d.State + " : " + d[selection];
+			return d.frequentie + " : " + d[selection];
 		});
 
 	var selector = d3.select("#drop")
@@ -127,7 +99,7 @@ d3.tsv("VotingInformation.tsv", function(error, data){
            		.ease("linear")
            		.select("title")
            		.text(function(d){
-           			return d.State + " : " + d[selection.value];
+           			return d.frequentie + " : " + d[selection.value];
            		});
       
            	d3.selectAll("g.y.axis")
@@ -148,6 +120,3 @@ d3.tsv("VotingInformation.tsv", function(error, data){
 
 
 });
-
-</script>
-</body>

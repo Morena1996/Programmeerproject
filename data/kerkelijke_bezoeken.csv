@@ -1,29 +1,60 @@
-"Religieuze betrokkenheid; kerkelijke gezindte; regio";;;;;;
-;Onderwerpen;Bezoek religieuze dienst;Bezoek religieuze dienst;Bezoek religieuze dienst;Bezoek religieuze dienst;Bezoek religieuze dienst
-;Onderwerpen;Een keer per week of vaker;Twee tot drie keer per maand;Een keer per maand;Minder dan een keer per maand;Zelden of nooit
-Regio's;Perioden;% van de bevolking;% van de bevolking;% van de bevolking;% van de bevolking;% van de bevolking
-Groningen (PV);2010;13;3;2;5;77
-Groningen (PV);2015;11;4;2;2;81
-Friesland (PV);2010;11;5;4;5;75
-Friesland (PV);2015;11;6;3;5;76
-Drenthe (PV);2010;9;5;4;5;77
-Drenthe (PV);2015;8;4;3;4;82
-Overijssel (PV);2010;13;6;5;8;68
-Overijssel (PV);2015;14;5;4;7;70
-Flevoland (PV);2010;15;3;3;4;75
-Flevoland (PV);2015;14;4;3;4;76
-Gelderland (PV);2010;12;5;4;8;72
-Gelderland (PV);2015;13;4;3;6;74
-Utrecht (PV);2010;12;4;3;7;74
-Utrecht (PV);2015;13;4;3;5;76
-Noord-Holland (PV);2010;6;3;3;5;83
-Noord-Holland (PV);2015;6;3;3;5;84
-Zuid-Holland (PV);2010;13;4;4;6;74
-Zuid-Holland (PV);2015;12;4;3;6;76
-Zeeland (PV);2010;16;5;3;7;69
-Zeeland (PV);2015;21;2;3;4;70
-Noord-Brabant (PV);2010;6;3;4;13;73
-Noord-Brabant (PV);2015;6;3;4;10;79
-Limburg (PV);2010;7;4;7;17;65
-Limburg (PV);2015;5;3;5;13;74
-© Centraal Bureau voor de Statistiek, Den Haag/Heerlen 8-1-2018;;;;;;
+Groningen;Een keer per week of vaker;13;11
+Groningen;Twee tot drie keer per maand;3;4
+Groningen;Een keer per maand;2;2
+Groningen;Minder dan een keer per maand;5;2
+Groningen;Zelden of nooit;77;81
+Friesland;Een keer per week of vaker;11;11
+Friesland;Twee tot drie keer per maand;5;6
+Friesland;Een keer per maand;4;3
+Friesland;Minder dan een keer per maand;5;5
+Friesland;Zelden of nooit;75;76
+Drenthe;Een keer per week of vaker;9;8
+Drenthe;Twee tot drie keer per maand;5;4
+Drenthe;Een keer per maand;4;3
+Drenthe;Minder dan een keer per maand;5;4
+Drenthe;Zelden of nooit;77;82
+Overijssel;Een keer per week of vaker;13;14
+Overijssel;Twee tot drie keer per maand;6;5
+Overijssel;Een keer per maand;5;4
+Overijssel;Minder dan een keer per maand;8;7
+Overijssel;Zelden of nooit;68;70
+Flevoland;Een keer per week of vaker;15;14
+Flevoland;Twee tot drie keer per maand;3;4
+Flevoland;Een keer per maand;3;3
+Flevoland;Minder dan een keer per maand;4;4
+Flevoland;Zelden of nooit;75;76
+Gelderland;Een keer per week of vaker;12;13
+Gelderland;Twee tot drie keer per maand;5;4
+Gelderland;Een keer per maand;4;3
+Gelderland;Minder dan een keer per maand;8;6
+Gelderland;Zelden of nooit;72;74
+Utrecht;Een keer per week of vaker;12;13
+Utrecht;Twee tot drie keer per maand;4;4
+Utrecht;Een keer per maand;3;3
+Utrecht;Minder dan een keer per maand;7;5
+Utrecht;Zelden of nooit;74;76
+Noord-Holland;Een keer per week of vaker;6;6
+Noord-Holland;Twee tot drie keer per maand;3;3
+Noord-Holland;Een keer per maand;3;3
+Noord-Holland;Minder dan een keer per maand;5;5
+Noord-Holland;Zelden of nooit;83;84
+Zuid-Holland;Een keer per week of vaker;13;12
+Zuid-Holland;Twee tot drie keer per maand;4;4
+Zuid-Holland;Een keer per maand;4;3
+Zuid-Holland;Minder dan een keer per maand;6;6
+Zuid-Holland;Zelden of nooit;74;76
+Zeeland;Een keer per week of vaker;16;21
+Zeeland;Twee tot drie keer per maand;5;2
+Zeeland;Een keer per maand;3;3
+Zeeland;Minder dan een keer per maand;7;4
+Zeeland;Zelden of nooit;69;70
+Noord-Brabant;Een keer per week of vaker;6;6
+Noord-Brabant;Twee tot drie keer per maand;3;3
+Noord-Brabant;Een keer per maand;4;4
+Noord-Brabant;Minder dan een keer per maand;13;10
+Noord-Brabant;Zelden of nooit;73;79
+Limburg;Een keer per week of vaker;7;5
+Limburg;Twee tot drie keer per maand;4;3
+Limburg;Een keer per maand;7;5
+Limburg;Minder dan een keer per maand;17;13
+Limburg;Zelden of nooit;65;74
