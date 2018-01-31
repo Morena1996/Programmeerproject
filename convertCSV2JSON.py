@@ -7,7 +7,7 @@
 import csv
 import json
 
-words = ["gezindte", "percentage", "provincie", "jaar"]
+words = ["province", "married2010", "married2015"]
 
 def convert(filename):
 	filename_csv = filename
@@ -21,15 +21,14 @@ def convert(filename):
 	for line in file_csv:
 		var_1 = line.split(';')[0]
 		var_2 = line.split(';')[1]
-		var_3 = line.split(';')[2]
-		var_4 = line.split(';')[3].split('\n')[0]
-		data.append({words[0]: var_1, words[1]: var_2, words[2]: var_3, words[3]: var_4})
+		var_3= line.split(';')[2].split('\n')[0]
+		data.append({words[0]: var_1, words[1]: var_2, words[2]: var_3})
 
 
 	json.dump(data, file_json, sort_keys=True, indent=4, separators=(',', ': '))
 
 	
-convert("kerkelijke_gezindten.csv")
+convert("married.csv")
 
 
 

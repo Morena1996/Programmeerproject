@@ -3,114 +3,143 @@ Programmeerproject
 Name: Morena Bastiaansen
 Student number: 10725792
 
-barchart.js
+gauge.js
 File with JavaScript code for bar chart about religion in the Netherlands
 */
 
+function loadBarchart(){
+	
+	var margin = {top: 30, right: 180, bottom: 80, left: 180},
+	    width = 600 - margin.left - margin.right,
+	    height = 300 - margin.top - margin.bottom;
 
-var margin = 40;
-var width = 900 - 2*margin;
-var height = 500 - 2*margin;
+	var svg = d3.select("body").append("svg")
+		.attr("width", width + margin.left + margin.right)
+	    .attr("height", height + margin.top + margin.bottom)
+	.append("g")
+	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// get the right data and compose the chart
-function get_data(file_name, chart, x, y) {
-	d3.json(file_name, function(data) {
-		var data = data.filter(function(d){return d.jaar == '2010';});
-		var data = data.filter(function(d){return d.provincie == 'Friesland';});
-		var len = data.length;
-		for (var n = 0; n < len; n++) {
-			data[n]["gezindte"] = String(data[n]["gezindte"]);
-			data[n]["percentage"] = Number(data[n]["percentage"]);
-		}
+	d3.json("kerkelijke_bezoeken.json", function(error, data){
 
-	console.log(data)
-	// define domains
-	x.domain(data.map(function(d) {return d.gezindte; }));
-	y.domain([d3.min(data, function(d) { return d.percentage; })-1, 
-			  100])
+		// filter year
+		var data = data.filter(function(d){return d.provincie == 'Groningen';});
+		// Get every column value
+		var elements = Object.keys(data[0])
+			.filter(function(d){
+				return ((d != "provincie") & (d != "frequentie") & (d != "percentage"));
+			});
 
-	// create variable for bars
-	var bar = chart.selectAll(".bar")
-		.data(data)
-	.enter().append("g")
-		.attr("id", function(d) { return "g" + d.gezindte});
-
-	// create rectangles for bars
-	bar.append("rect")
-		.attr("class", "bar")
-		.attr("x", function(d) { return x(d.gezindte); })
-		.attr("y", function(d) { return y(d.percentage); })
-		.attr("width", x.rangeBand())
-      	.attr("height", function(d) { return height - y(d.percentage); })
-		.on("mouseover", mouse_hover)
-		.on("mouseout", mouse_off);
-
-	// functions to control hovering
-	function mouse_hover(d) {
-		chart.select("#g"+d.gezindte)
-			.append("text")
-				.attr("id", "t" + d.gezindte)
-				.attr("class", "tooltip")
-				.attr("x", function(d){ return x(d.gezindte) + x.bandwidth()/2; })
-				.text(function(d) { return d.percentage; });
-	}
-
-	function mouse_off(d) {
-		d3.select("#t" + d.gezindte)
-			.remove();
-	}
+		console.log(data)
 		
-	// make axes
-	chart.append("g")
-		.attr("class", "title")
-	.append("text")
-		.attr("x", width/2)
-		.text("Verdelingen kerkelijke gezindten");
-		
-  	chart.append("g")
-    	.call(d3.svg.axis()
-        	.scale(x)
-        	.orient("bottom"));
+		var selection = elements[0];
 
-    chart.append("text")             
-    	.attr("transform",
-              "translate(" + (width) + " ," + 
-                             (height + 30) + ")")
-      .style("text-anchor", "middle")
-      .text("Gezindte");
+		console.log(elements)
+		console.log(elements[0])
 
-    chart.append("g")
-    	.call(d3.svg.axis()
-        	.scale(y)
-        	.orient("left"));
+		var y = d3.scale.linear()
+				.domain([0,100])
+				.range([height, 0]);
 
-    chart.append("text")             
-      .attr("transform",
-            "translate(" + (width/2) + " ," + 
-                           (height + margin.top - 30) + ")")
-      .style("text-anchor", "middle")
-      .text("Percentage");
+		var x = d3.scale.ordinal()
+				.domain(data.map(function(d){ return d.frequentie;}))
+				.rangeBands([0, width]);
+
+		var xAxis = d3.svg.axis()
+			.scale(x)
+		    .orient("bottom");
+
+		var yAxis = d3.svg.axis()
+			.scale(y)
+		    .orient("left");
+
+		svg.append("g")
+	    	.attr("class", "x axis")
+	    	.attr("transform", "translate(0," + height + ")")
+	    	.call(xAxis)
+	    	.selectAll("text")
+	    	.style("font-size", "10px")
+	      	.style("text-anchor", "end")
+	      	.attr("dx", "-.8em")
+	      	.attr("dy", "-.55em")
+	      	.attr("transform", "rotate(-30)" );
+
+
+	 	svg.append("g")
+	    	.attr("class", "y axis")
+	    	.call(yAxis);
+
+		svg.selectAll("rectangle")
+			.data(data)
+			.enter()
+			.append("rect")
+			.attr("class","rectangle")
+			.attr("width", width/data.length)
+			.attr("height", function(d){
+				return height - y(+d[selection]);
+			})
+			.attr("x", function(d, i){
+				return (width / data.length) * i ;
+			})
+			.attr("y", function(d){
+				return y(+d[selection]);
+			})
+			.append("title")
+			.text(function(d){
+				return d.frequentie + ": " + d[selection];
+			});
+
+
+		var selector = d3.select("#drop")
+	    	.append("select")
+	    	.attr("id","dropdown")
+	    	.on("change", function(d){
+	        	selection = document.getElementById("dropdown");
+
+	        	y.domain([0, d3.max(data, function(d){
+					return +d[selection.value];})]);
+
+	        	yAxis.scale(y);
+
+	        	d3.selectAll(".rectangle")
+	           		.transition()
+		            .attr("height", function(d){
+						return height - y(+d[selection.value]);
+					})
+					.attr("x", function(d, i){
+						return (width / data.length) * i ;
+					})
+					.attr("y", function(d){
+						return y(+d[selection.value]);
+					})
+	           		.ease("linear")
+	           		.select("title")
+	           		.text(function(d){
+	           			return d.frequentie + ": " + d[selection.value];
+	           		});
+	      
+	           	d3.selectAll("g.y.axis")
+	           		.transition()
+	           		.call(yAxis);
+
+	         });
+
+	    selector.selectAll("option")
+	      .data(elements)
+	      .enter().append("option")
+	      .attr("value", function(d){
+	        return d;
+	      })
+	      .text(function(d){
+	        return d;
+	      })
+
+	    svg.append("g")
+	    .attr("class", "dropdown")
+	    .call("selector")
+
 
 	});
 
-}
+};
 
-// create function to make the chart 
-function make_chart(file_name) {
-	var chart = d3.select(".chart")
-	.attr("width", width + 2*margin)
-	.attr("height", height + 2*margin)
-.append("g")
-	.attr("transform", "translate("+margin+","+margin+")");
-
-	var x = d3.scale.ordinal()
-		.rangePoints([0, width])
-	var y = d3.scale.linear()
-		.range([height, 0]);
-
-	get_data(file_name, chart, x, y);
-}
-
-
-// call function to make barchart
-make_chart("kerkelijke_gezindten.json");
+loadBarchart();

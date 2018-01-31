@@ -1,0 +1,53 @@
+body{
+	background-color: #eff9f8;
+}
+#map {
+  position: relative;
+  top: 10px;
+  right: 100px;
+}
+
+#barchart {
+	position: relative;
+	left: 400px;
+	top: -330px;
+}
+
+#gauge {
+	position: relative;
+	left: 330px;
+	top: -200px;
+}
+
+#title {
+	position: relative;
+	left: 370px;
+	top: -20px;
+	font-family: "georgia";
+	font-size: 26px;
+}
+
+#mapTitle {
+	position: relative;
+	left: 100px;
+	top: 30px;
+	font-family: "georgia";
+	font-size: 10px;
+}
+
+#barChartTitle {
+	position: relative;
+	left: 550px;
+	top: 70px;
+	font-family: "georgia";
+	font-size: 10px;
+
+}
+
+#gaugeTitle {
+	position:relative;
+	left: 280px;
+	top:480px;
+	font-family: "georgia";
+	font-size: 10px;
+}

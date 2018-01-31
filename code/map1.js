@@ -1,4 +1,13 @@
+/*
+Programmeerproject
+Name: Morena Bastiaansen
+Student number: 10725792
 
+gauge.js
+File with JavaScript code for map about religion in the Netherlands
+*/
+
+function loadMap() {
 
     var width = 500,
         height = 400;
@@ -77,3 +86,7 @@
                 });
 
     });
+
+};
+
+loadMap();

@@ -1,12 +1,5 @@
-
-
-    var width = 500,
-        height = 400;
-
-
-    var div = d3.select("body").append("div")   
-        .attr("class", "tooltip")               
-        .style("opacity", 0);
+    var width = 960,
+        height = 550;
 
     var svg = d3.select("body").append("svg")
         .attr("width", width)
@@ -18,6 +11,16 @@
         .range(d3.range(0, 100, 10).map(function(i) { return i/10; }));
 
     var colour = ["#eff9f8","#caf7f2","#a4fcf2","#7dc6be","#6aa59e","#4e8982","#366d67","#21544e","#0f3a35","#0c0730"]
+
+    console.log(colour[quantize(51)])
+
+
+
+    console.log(quantize(8))
+    console.log(quantize(25))
+    console.log(quantize(31))
+    console.log(quantize(51))
+    console.log(quantize(94))
 
     var mainGroup = svg.append("g");
     mainGroup.style({ stroke: "white", "stroke-width": "2px", "stroke-opacity": 0.0 });
@@ -56,23 +59,27 @@
                 .attr("fill", function(d) { return colour[quantize(d.properties.rate)]
                 })
 
+            var div = d3.select("body").append("div")   
+                .attr("class", "tooltip")               
+                .style("opacity", 0);
 
-             mainGroup.selectAll("path")
+            mainGroup.selectAll("path")
                 .on("mouseover", function (d) {
                     console.log("mouseover");
                     d3.select(this).style("stroke-opacity", 1.0);
-                    div.transition().duration(300)
-                    .style("opacity", 1)
+                    div.transition().duration(0)
+                    .style("opacity", 1.0)
                     div.text(d.properties.name+ ": " +d.properties.rate+"%")
-                    .style("left", d3.event.pageX + "px")
-                    .style("top", d3.event.pageY - 30 + "px");
-                })
+                    .style("left", (d3.event.pageX)+"px")
+                    .style("top", (d3.event.pageY-30)+"px")
+                });
+            mainGroup.selectAll("path")
                 .on("mouseout", function () {
                     d3.select(this)
-                    .style("stroke-opacity", 0);
-                    div.transition().duration(300)
+                    .style("stroke-opacity", 0.0);
+                    div.transition().duration(0)
                     .style("opacity",0.8);
-                    div.transition().duration(300)
+                    div.transition.duration(0)
                     .style("opacity",0);
                 });
 
