@@ -81,6 +81,8 @@ Vandaag ben ik ziek thuisgebleven.
 
 # dag 16
 
+Vandaag ben ik ziek naar huis gegaan.
+
 
 # day 17
 Vandaag heb ik de tooltip toegevoegd aan de kaart van Nederland. Dit duurde lang, omdat ik veel errors kreeg. Ik heb naar een aantal voorbeelden gekeken op internet, maar toen ik er een geïmplementeerd had kreeg ik het volgende probleem: de tooltip werkte wel voor het html bestand waarin alleen de kaart stond. Maar toen ik de kaart toevoegde aan het html bestand waar ook de bar chart en de gauge in staan, werkte de tooltip ineens niet  meer… Ik kreeg een error over pageX en pageY. Ik heb de html bestanden vergeleken en gekeken of ik iets over het hoofd zag waarom het in het ene wel en in het andere niet werkte, maar kon niks vinden. Ook na veel google werk en een vraag aan de staff kwam ik er niet uit. Uiteindelijk heb ik de gauge en de bar chart toegevoegd aan het html bestand waar de map wel in werkte en ben ik hierin verder gaan werken. 
