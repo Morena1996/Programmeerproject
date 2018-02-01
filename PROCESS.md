@@ -95,5 +95,5 @@ Vandaag heb ik de interactiviteit van mijn visualisaties gefikst. Dit heb ik ged
 
 # day 19
 
-Vandaag heb ik mijn verslag geschreven en de READme.md gefikst.
+Vandaag heb ik mijn verslag geschreven en de README.md gefikst.
 
