@@ -51,39 +51,45 @@ Ik ben ook verder gegaan met mijn staafdiagram veranderen van v3 naar v4, wat to
 
 
 # dag 9 
-Vandaag 
 
-# dag 10
-Vandaag ben ik ziek thuisgebleven.
+Vandaag heb ik geprobeerd de * incomplete alpha version *  van mijn project af te krijgen. De interactie is helaas nog niet gelukt. Wel is alle data geprepareerd en zijn twee van de drie visualisaties af. Ik probeerde de interactie te fiksen, maar kwam erachter dat ik beter eerst had kunnen beginnen met de kaart, want als de gebruiker op de kaart klikt worden pas de barchart en de *gauge* weergegeven... 
 
 
-# day 11
-Vandaag heb ik me ingelezen in TopoJSON en gekeken of dit een optie was om de kaart van Nederland mee te vormen. Ik heb de afgelopen weken flink wat lopen af googlen voor deze kaart en ook de staff vragen gesteld, maar steeds was er wel weer iets anders waarom de gevonden kaart niet bruikbaar was. TopoJSON leek me een fijne optie,  omdat…?
+# dag 10:
 
-Ik heb dit voorbeeld gebruikt:
 
-Vervolgens heb ik geprobeerd een mouseover functie toe te voegen, maar dit ging niet meteen heel gemakkelijk. …..
 
-# day 12
+# dag 11
 
-# day 13
 
-# day 14
+# dag 12
+Vandaag heb ik me ingelezen in TopoJSON en gekeken of dit een optie was om de kaart van Nederland mee te vormen. Ik heb de afgelopen weken flink wat lopen af googlen voor deze kaart en ook de staff vragen gesteld, maar steeds was er wel weer iets anders waarom de gevonden kaart niet bruikbaar was. TopoJSON leek me een goede optie, omdat ik in het TopoJSON bestand, dat de paden bevat om de provincies te tekenen, ook heel makkelijk zelf data kan toevoegen als eigenschappen per provincie. 
+
+Ik heb dit voorbeeld gebruikt: 
+
+Vervolgens heb ik geprobeerd een mouseover functie toe te voegen, maar dit ging niet meteen heel gemakkelijk. Ik deed er lang over om erachter te komen hoe ik bepaalde data selecteer uit het TopoJSON bestand om deze te gebruiken voor de mouseover functionaliteit. Ik heb nooit eerder gewerkt met TopoJSON. Uiteindelijk is dit wel gelukt.
+
+# dag 13
+
+
+# dag 14
+Vandaag heb ik niet veel kunnen doen en ben ik ziek naar huis gegaan.
+
 
 # dag 15
+
 Vandaag ben ik ziek thuisgebleven.
 
+# dag 16
 
-
-
-Vandaag heb ik de kaart gevormd met TopoJSON data.
-# day 16
-Vandaag heb ik de tooltip toegevoegd aan de kaart van Nederland. Dit duurde lang, omdat ik veel errors kreeg. Ik heb naar een aantal voorbeelden gekeken op internet, maar toen ik er een geïmplementeerd had kreeg ik het volgende probleem: de tooltip werkte wel voor het html bestand waarin alleen de kaart stond. Maar toen ik de kaart toevoegde aan het html bestand waar ook de bar chart en de gauge in staan, werkte de tooltip ineens niet  meer… Ik kreeg een error over pageX en pageY. Ik heb de html bestanden vergeleken en gekeken of ik iets over het hoofd zag waarom het in het ene wel en in het andere niet werkte, maar kon niks vinden. Ook na veel google werk en een vraag aan de staff kwam ik er niet uit. Uiteindelijk heb ik de gauge en de bar chart toegevoegd aan het html bestand waar de map wel in werkte en ben ik hierin verder gaan werken. 
 
 # day 17
+Vandaag heb ik de tooltip toegevoegd aan de kaart van Nederland. Dit duurde lang, omdat ik veel errors kreeg. Ik heb naar een aantal voorbeelden gekeken op internet, maar toen ik er een geïmplementeerd had kreeg ik het volgende probleem: de tooltip werkte wel voor het html bestand waarin alleen de kaart stond. Maar toen ik de kaart toevoegde aan het html bestand waar ook de bar chart en de gauge in staan, werkte de tooltip ineens niet  meer… Ik kreeg een error over pageX en pageY. Ik heb de html bestanden vergeleken en gekeken of ik iets over het hoofd zag waarom het in het ene wel en in het andere niet werkte, maar kon niks vinden. Ook na veel google werk en een vraag aan de staff kwam ik er niet uit. Uiteindelijk heb ik de gauge en de bar chart toegevoegd aan het html bestand waar de map wel in werkte en ben ik hierin verder gaan werken. 
+
+# day 18
 Vandaag heb ik de data die ik wil weergeven met de kaart van Nederland, aan de kaart gekoppeld. De provincie kleurt nu naar het percentage van de inwoners dat zichzelf in die provincie tot een kerkelijke gezindte rekent. Het duurde lang voordat dit lukte. Eerst had ik de informatie over welke kleuren bij welke kwantielen horen in de css file staan en in JavaScript een functie geschreven die vervolgens elke path op de kaart de juiste kleur geeft. Dit kostte al veel tijd en heb ik met behulp van voorbeelden op internet kunnen fiksen. Iemand van de staff vertelde mij toen dat mijn code er heel erg op vooruit zou gaan als ik het anders zou doen, namelijk als de informatie niet in de css zou staan, omdat dit je code minder herbruikbaar maakt. Dus heb ik het toen zo omgeschreven dat alles in het JavaScript bestand staat. 
 
-# dag 18
+# dag 19
 Vandaag heb ik de interactiviteit van mijn visualisaties gefikst. Dit heb ik gedaan door de drie functies voor de verschillende visualisaties elkáár te laten aanroepen. Ik heb eerst een functionaliteit toegevoegd waarbij de bar chart wordt weergegeven wanneer de gebruiker op de kaart een provincie selecteert. Het probleem waar ik hierbij op stuitte was dat bij een muisklik de juiste bar chart wel werd weergegeven, maar dat als er op een andere provincie werd geklikt, de oude bar chart bleef staan. Om dit op te lossen heb ik de functie removeBarchart geschreven, die de oude bar chart verwijdert. Dit lukte eerst niet, omdat ik de variabele naam “chart” als argument meegaf (dit werkt niet bij d3.select.remove()). Toen ik de id van het svg element gebruikte, lukte het wel.
 
 # day 19
