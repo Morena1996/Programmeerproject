@@ -33,11 +33,14 @@ De code bestaat uit de volgende bestanden:
 
 Het proces
 ----------
+Ik heb van dit vak het meest geleerd van alle vakken dan de minor. Omdat ik zelfstandig een heel project van begin tot eind moest bouwen, ben ik tegen veel dingen aangelopen die ik nu anders zou doen. Een voorbeeld hiervan is de data die ik wilde gebruiken voor de kaart van Nederland, zoals beschreven op dag 7 van mijn *process book*. Gelukkig was het relatief makkelijk en snel oplosbaar, maar in de toekomst zal ik daar nu natuurlijk eerder over nadenken. D
+Het andere probleem op dag 7, de verschillende versies van D3 voor de staafdiagram en de *gauge*, zal ik natuurlijk in de toekomst ook niet meer tegenkomen.
+
+Ook heb ik het mezelf extra moeilijk gemaakt door te lang in verschillende HTML bestanden te werken. Omdat ik de verschillende bestanden pas laat samenvoegde, kwamen er toen allerlei nieuwe problemen, zoals dat de *drop down* van de staafdiagram en de *mouse over* functionaliteit van de kaart ineens niet meer werkten in deze bestanden. Hier heb ik dus ook van geleerd dat je beter niet in verschillende bestanden kunt blijven werken, maar beter meteen kan testen hoe het samen werkt.
+
+Iets anders waar ik tegenaan liep was het maken van de kaart van Nederland. Ik had geen idee waar ik moest beginnen en pas toen ik me flink had verdiept in TopoJSON lukte dit eindelijk. Hier heb ik ook veel van geleerd. 
 
 
-
-Beslissingen 
-------------
-
-Terugblik
----------
+Beslissingen en terugblik:
+-------------------------
+Doordat ik de data voor de staafdiagram en de data voor de kaart van Nederland heb verwisseld, geeft mijn visualisatie een stuk duidelijker de data weer. 

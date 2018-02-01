@@ -65,8 +65,6 @@ Vandaag heb ik geprobeerd de * incomplete alpha version *  van mijn project af t
 # dag 12
 Vandaag heb ik me ingelezen in TopoJSON en gekeken of dit een optie was om de kaart van Nederland mee te vormen. Ik heb de afgelopen weken flink wat lopen af googlen voor deze kaart en ook de staff vragen gesteld, maar steeds was er wel weer iets anders waarom de gevonden kaart niet bruikbaar was. TopoJSON leek me een goede optie, omdat ik in het TopoJSON bestand, dat de paden bevat om de provincies te tekenen, ook heel makkelijk zelf data kan toevoegen als eigenschappen per provincie. 
 
-Ik heb dit voorbeeld gebruikt: 
-
 Vervolgens heb ik geprobeerd een mouseover functie toe te voegen, maar dit ging niet meteen heel gemakkelijk. Ik deed er lang over om erachter te komen hoe ik bepaalde data selecteer uit het TopoJSON bestand om deze te gebruiken voor de mouseover functionaliteit. Ik heb nooit eerder gewerkt met TopoJSON. Uiteindelijk is dit wel gelukt.
 
 # dag 13
