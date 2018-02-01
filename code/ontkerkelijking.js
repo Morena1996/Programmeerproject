@@ -3,12 +3,15 @@ Programmeerproject
 Name: Morena Bastiaansen
 Student number: 10725792
 
-gauge.js
-File with JavaScript code for map about religion in the Netherlands
+ontkerkelijking.js
+File with JavaScript code for data visualization on religion in the Netherlands
 */
+
+// function that loads the map
 
 function loadMap() {
 
+//
     var width = 600,
         height = 400;
 

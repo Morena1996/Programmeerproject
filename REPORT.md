@@ -19,12 +19,13 @@ De code bestaat uit de volgende bestanden:
 
 	* ontkerkelijking.js:
 	Dit bestand bevat de JavaScript code voor de webpagina. De code is ingedeeld in vijf functies:
-		1.	function loadMap();
-			Deze functie bevat de code om de kaart van Nederland te vormen. Met behulp van TopoJSON data wordt de kaart weergegeven en vervolgens wordt de kaart gekleurd met behulp van 
-		2.	function loadBarchart();
-		3.	function loadGauge();
-		4.	removeBarchart();
-		5.	removeGauge();
+		*	function loadMap();
+			Deze functie bevat de code om de kaart van Nederland te vormen. Met behulp van TopoJSON data wordt de kaart weergegeven en vervolgens wordt de kaart gekleurd naar de data in het TopoJSON bestand, over het percentage inwoners dat zichzelf tot een kerkelijke gezindte rekent. Wanneer een gebruiker op een provincie klikt, roept deze functie respectievelijk de functies *removeBarchart*, *removeGauge*, *loadBarchart* en *loadGauge* aan. 
+		*	function *loadBarchart*
+			Deze functie bevat de code om de staafdiagram te vormen. 
+		*	function *loadGauge*
+		*	function *removeBarchart*
+		*	function *removeGauge*
 
 
 Het proces
