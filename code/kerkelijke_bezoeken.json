@@ -1,0 +1,362 @@
+[
+    {
+        "2010": "13",
+        "2015": "11",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Groningen"
+    },
+    {
+        "2010": "3",
+        "2015": "4",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Groningen"
+    },
+    {
+        "2010": "2",
+        "2015": "2",
+        "frequentie": "Een keer per maand",
+        "provincie": "Groningen"
+    },
+    {
+        "2010": "5",
+        "2015": "2",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Groningen"
+    },
+    {
+        "2010": "77",
+        "2015": "81",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Groningen"
+    },
+    {
+        "2010": "11",
+        "2015": "11",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Friesland"
+    },
+    {
+        "2010": "5",
+        "2015": "6",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Friesland"
+    },
+    {
+        "2010": "4",
+        "2015": "3",
+        "frequentie": "Een keer per maand",
+        "provincie": "Friesland"
+    },
+    {
+        "2010": "5",
+        "2015": "5",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Friesland"
+    },
+    {
+        "2010": "75",
+        "2015": "76",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Friesland"
+    },
+    {
+        "2010": "9",
+        "2015": "8",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Drenthe"
+    },
+    {
+        "2010": "5",
+        "2015": "4",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Drenthe"
+    },
+    {
+        "2010": "4",
+        "2015": "3",
+        "frequentie": "Een keer per maand",
+        "provincie": "Drenthe"
+    },
+    {
+        "2010": "5",
+        "2015": "4",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Drenthe"
+    },
+    {
+        "2010": "77",
+        "2015": "82",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Drenthe"
+    },
+    {
+        "2010": "13",
+        "2015": "14",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Overijssel"
+    },
+    {
+        "2010": "6",
+        "2015": "5",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Overijssel"
+    },
+    {
+        "2010": "5",
+        "2015": "4",
+        "frequentie": "Een keer per maand",
+        "provincie": "Overijssel"
+    },
+    {
+        "2010": "8",
+        "2015": "7",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Overijssel"
+    },
+    {
+        "2010": "68",
+        "2015": "70",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Overijssel"
+    },
+    {
+        "2010": "15",
+        "2015": "14",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Flevoland"
+    },
+    {
+        "2010": "3",
+        "2015": "4",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Flevoland"
+    },
+    {
+        "2010": "3",
+        "2015": "3",
+        "frequentie": "Een keer per maand",
+        "provincie": "Flevoland"
+    },
+    {
+        "2010": "4",
+        "2015": "4",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Flevoland"
+    },
+    {
+        "2010": "75",
+        "2015": "76",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Flevoland"
+    },
+    {
+        "2010": "12",
+        "2015": "13",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Gelderland"
+    },
+    {
+        "2010": "5",
+        "2015": "4",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Gelderland"
+    },
+    {
+        "2010": "4",
+        "2015": "3",
+        "frequentie": "Een keer per maand",
+        "provincie": "Gelderland"
+    },
+    {
+        "2010": "8",
+        "2015": "6",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Gelderland"
+    },
+    {
+        "2010": "72",
+        "2015": "74",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Gelderland"
+    },
+    {
+        "2010": "12",
+        "2015": "13",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Utrecht"
+    },
+    {
+        "2010": "4",
+        "2015": "4",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Utrecht"
+    },
+    {
+        "2010": "3",
+        "2015": "3",
+        "frequentie": "Een keer per maand",
+        "provincie": "Utrecht"
+    },
+    {
+        "2010": "7",
+        "2015": "5",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Utrecht"
+    },
+    {
+        "2010": "74",
+        "2015": "76",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Utrecht"
+    },
+    {
+        "2010": "6",
+        "2015": "6",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Noord-Holland"
+    },
+    {
+        "2010": "3",
+        "2015": "3",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Noord-Holland"
+    },
+    {
+        "2010": "3",
+        "2015": "3",
+        "frequentie": "Een keer per maand",
+        "provincie": "Noord-Holland"
+    },
+    {
+        "2010": "5",
+        "2015": "5",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Noord-Holland"
+    },
+    {
+        "2010": "83",
+        "2015": "84",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Noord-Holland"
+    },
+    {
+        "2010": "13",
+        "2015": "12",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Zuid-Holland"
+    },
+    {
+        "2010": "4",
+        "2015": "4",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Zuid-Holland"
+    },
+    {
+        "2010": "4",
+        "2015": "3",
+        "frequentie": "Een keer per maand",
+        "provincie": "Zuid-Holland"
+    },
+    {
+        "2010": "6",
+        "2015": "6",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Zuid-Holland"
+    },
+    {
+        "2010": "74",
+        "2015": "76",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Zuid-Holland"
+    },
+    {
+        "2010": "16",
+        "2015": "21",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Zeeland"
+    },
+    {
+        "2010": "5",
+        "2015": "2",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Zeeland"
+    },
+    {
+        "2010": "3",
+        "2015": "3",
+        "frequentie": "Een keer per maand",
+        "provincie": "Zeeland"
+    },
+    {
+        "2010": "7",
+        "2015": "4",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Zeeland"
+    },
+    {
+        "2010": "69",
+        "2015": "70",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Zeeland"
+    },
+    {
+        "2010": "6",
+        "2015": "6",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Noord-Brabant"
+    },
+    {
+        "2010": "3",
+        "2015": "3",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Noord-Brabant"
+    },
+    {
+        "2010": "4",
+        "2015": "4",
+        "frequentie": "Een keer per maand",
+        "provincie": "Noord-Brabant"
+    },
+    {
+        "2010": "13",
+        "2015": "10",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Noord-Brabant"
+    },
+    {
+        "2010": "73",
+        "2015": "79",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Noord-Brabant"
+    },
+    {
+        "2010": "7",
+        "2015": "5",
+        "frequentie": "Een keer per week of vaker",
+        "provincie": "Limburg"
+    },
+    {
+        "2010": "4",
+        "2015": "3",
+        "frequentie": "Twee tot drie keer per maand",
+        "provincie": "Limburg"
+    },
+    {
+        "2010": "7",
+        "2015": "5",
+        "frequentie": "Een keer per maand",
+        "provincie": "Limburg"
+    },
+    {
+        "2010": "17",
+        "2015": "13",
+        "frequentie": "Minder dan een keer per maand",
+        "provincie": "Limburg"
+    },
+    {
+        "2010": "65",
+        "2015": "74",
+        "frequentie": "Zelden of nooit",
+        "provincie": "Limburg"
+    }
+]
