@@ -42,11 +42,11 @@ function loadMap() {
         .attr("class", "tooltip")
         .style("opacity", 1e-6);
 
-    d3.json("nld6.json", function(error, nld6) {
-            console.log(nld6);
+    d3.json("nld.json", function(error, nld) {
+            console.log(nld);
 
 
-            var l = topojson.feature(nld6, nld6.objects.subunits).features[3],
+            var l = topojson.feature(nld, nld.objects.subunits).features[3],
                 b = path.bounds(l),
                 s = .2 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height),
                 t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
@@ -56,7 +56,7 @@ function loadMap() {
                 .translate(t);
 
 
-            var subunits = topojson.feature(nld6, nld6.objects.subunits).features;
+            var subunits = topojson.feature(nld, nld.objects.subunits).features;
 
             mainGroup.selectAll("path", "subunits")
                 .data(subunits)
