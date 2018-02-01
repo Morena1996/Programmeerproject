@@ -13,11 +13,11 @@ De webpagina bestaat uit een kaart van Nederland met daarop zichtbaar, per provi
 
 De code bestaat uit de volgende bestanden:
 
-	* index.html:
-		Dit bestand bevat de HTML-code die de opmaak van bepaalt voor de webpagina en binnen index.html worden twee andere bestanden aangeroepen:
-			* ontkerkelijking.css:
-				
-			* ontkerkelijking.js:
+* index.html:
+	Dit bestand bevat de HTML-code die de opmaak van bepaalt voor de webpagina en binnen index.html worden twee andere bestanden aangeroepen:
+	* ontkerkelijking.css:
+
+	* ontkerkelijking.js:
 
 Het proces
 ----------
