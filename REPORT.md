@@ -43,4 +43,6 @@ Iets anders waar ik tegenaan liep was het maken van de kaart van Nederland. Ik h
 
 Beslissingen en terugblik:
 -------------------------
-Doordat ik de data voor de staafdiagram en de data voor de kaart van Nederland heb verwisseld, geeft mijn visualisatie een stuk duidelijker de data weer. 
+Als je kijkt naar hoe mijn prototype eruit ziet (afbeelding "programmeerproject.png" in de map "docs") en hoe het eindresultaat is, dan zijn er een aantal verschillen. Een van die verschillen is dat ik de data die ik zou gebruiken voor de kaart van Nederland en de data die ik zou gebruiken voor de staafdiagram met elkaar heb omgewisseld, omdat ik tegen een probleem aanliep (zie "Het proces"). Ik denk dat het ten goede is gekomen van de visualisatie dat ik dat op deze manier heb gewijzigd, omdat mijn visualisatie op deze manier een stuk beter en duidelijker de dataset kan weergeven.
+
+Ik vind het wel erg jammer dat ik geen tijd meer had voor de tabel die een overzicht van de data weergeeft, want deze zou naar mijn idee veel overzichtelijkheid toevoegen aan de pagina en gebruikers een extra en betere manier bieden om de data echt te vergelijken. 
