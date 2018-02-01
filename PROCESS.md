@@ -55,19 +55,20 @@ Ik ben ook verder gegaan met mijn staafdiagram veranderen van v3 naar v4, wat to
 Vandaag heb ik geprobeerd de * incomplete alpha version *  van mijn project af te krijgen. De interactie is helaas nog niet gelukt. Wel is alle data geprepareerd en zijn twee van de drie visualisaties af. Ik probeerde de interactie te fiksen, maar kwam erachter dat ik beter eerst had kunnen beginnen met de kaart, want als de gebruiker op de kaart klikt worden pas de barchart en de *gauge* weergegeven... 
 
 
-# dag 10:
-
-
-
-# dag 11
-
-
-# dag 12
+# dag 10
 Vandaag heb ik me ingelezen in TopoJSON en gekeken of dit een optie was om de kaart van Nederland mee te vormen. Ik heb de afgelopen weken flink wat lopen af googlen voor deze kaart en ook de staff vragen gesteld, maar steeds was er wel weer iets anders waarom de gevonden kaart niet bruikbaar was. TopoJSON leek me een goede optie, omdat ik in het TopoJSON bestand, dat de paden bevat om de provincies te tekenen, ook heel makkelijk zelf data kan toevoegen als eigenschappen per provincie. 
 
 Vervolgens heb ik geprobeerd een mouseover functie toe te voegen, maar dit ging niet meteen heel gemakkelijk. Ik deed er lang over om erachter te komen hoe ik bepaalde data selecteer uit het TopoJSON bestand om deze te gebruiken voor de mouseover functionaliteit. Ik heb nooit eerder gewerkt met TopoJSON. Uiteindelijk is dit wel gelukt.
 
+# dag 11
+Vandaag ben ik ziek naar huis gegaan.
+
+# dag 12
+
+Vandaag ben ik verder gegaan met de opmaak en de positionering van mijn web pagina. 
+
 # dag 13
+Vandaag ben ik bezig geweest mijn repository op te schonen en heb ik geprobeerd de *drop down* te fiksen voor de staafdiagram te maken. In deze *drop down* kan de gebruiker het jaar selecteren waarvan data wordt weergegeven (2010 of 2015). Dit lukte, maar in de HTML waar de andere visualisaties ook in zitten verdween de *drop down*. Ik heb dit nog niet kunnen oplossen.
 
 
 # dag 14
@@ -91,5 +92,6 @@ Vandaag heb ik de data die ik wil weergeven met de kaart van Nederland, aan de k
 Vandaag heb ik de interactiviteit van mijn visualisaties gefikst. Dit heb ik gedaan door de drie functies voor de verschillende visualisaties elkáár te laten aanroepen. Ik heb eerst een functionaliteit toegevoegd waarbij de bar chart wordt weergegeven wanneer de gebruiker op de kaart een provincie selecteert. Het probleem waar ik hierbij op stuitte was dat bij een muisklik de juiste bar chart wel werd weergegeven, maar dat als er op een andere provincie werd geklikt, de oude bar chart bleef staan. Om dit op te lossen heb ik de functie removeBarchart geschreven, die de oude bar chart verwijdert. Dit lukte eerst niet, omdat ik de variabele naam “chart” als argument meegaf (dit werkt niet bij d3.select.remove()). Toen ik de id van het svg element gebruikte, lukte het wel.
 
 # day 19
-# day 20
+
+Vandaag heb ik mijn verslag geschreven en de READme.md gefikst.
 
