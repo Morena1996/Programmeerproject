@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <title id="title1">Ontkerkelijking in Nederland</title>
+    <p id="title" font-family="sans-serif">Ontkerkelijking in Nederland</p>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <p id="mapTitle">Percentage van de inwoners dat zichzelf tot een kerkelijke gezindte rekent, per provincie</p> 
+    <div class="relative1" id="map">
+        <script src="remove.js"></script>
+        <script src="map.js"></script>
+    </div>
+            <script src="https://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
+        <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <div class="relative2" id="barchart">
+        <script src="barchart.js"></script>
+    </div>
+    <div class="relative3" id="gauge">
+        <svg id="fillgauge" width="70%" height="300" onclick="gauge.update(NewValue());"></svg>
+        <script src="gauge.js"></script>
+    </div>
+    <div id="vis"></div>
+    <script src="d3CheckBox.js"></script>
+    <script src="checkbox.js"></script>
+    <script src="main.js"></script>
+</body> 
+</html>
+

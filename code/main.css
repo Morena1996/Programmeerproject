@@ -1,0 +1,86 @@
+body{
+	background-color: #eff9f8;
+}
+
+#vis {
+	position: absolute;
+	top: 5px;
+	left: 950px;
+}
+#map {
+  position: relative;
+  top: 10px;
+  right: 100px;
+}
+
+#barchart {
+	position: relative;
+	left: 400px;
+	top: -330px;
+}
+
+#gauge {
+	position: relative;
+	left: 970px;
+	top: -570px;
+}
+
+#title {
+	position: relative;
+	left: 370px;
+	top: -20px;
+	font-family: "georgia";
+	font-size: 26px;
+}
+
+#mapTitle {
+	position: relative;
+	left: 100px;
+	top: 30px;
+	font-family: "georgia";
+	font-size: 10px;
+}
+
+#barChartTitle {
+	position: relative;
+	left: 550px;
+	top: 70px;
+	font-family: "georgia";
+	font-size: 10px;
+
+}
+
+#gaugeTitle {
+	position:relative;
+	left: 280px;
+	top:480px;
+	font-family: "georgia";
+	font-size: 10px;
+}
+
+.rectangle {
+	fill: #21544e;
+}
+.rectangle:hover {
+	fill: #6aa59e;
+}
+.axis {
+  font-family: "georgia";
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dropdown {
+	position: absolute;
+	left:270px;
+	right:200px;
+	top:30px;
+	font: 10px sans-serif;
+	width:200px;
+	height:10px;
+}
