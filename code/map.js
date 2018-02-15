@@ -19,10 +19,10 @@ function loadMap(data) {
         .attr("class", "tooltip")               
         .style("opacity", 0);
 
-    // Make variable for the SVG element.
-    var svg = d3.select("#map").append("svg")
-        .attr("width", width)
-        .attr("height", height);
+    // // Make variable for the SVG element.
+    // var svgmap = d3.select("#map").attr("id", "svgmap").append("svg")
+    //     .attr("width", width)
+    //     .attr("height", height);
 
     // This variable links the colours to the quantiles.
     var quantize = d3.scale.quantize()
@@ -33,7 +33,10 @@ function loadMap(data) {
     var colour = ["#eff9f8","#caf7f2","#a4fcf2","#7dc6be","#6aa59e","#4e8982","#366d67","#21544e","#0f3a35","#0c0730"]
 
     // Append group to SVG element.
-    var mainGroup = svg.append("g").attr("id", "mainGroup");
+    var mainGroup = d3.select("#map").append("svg").attr("id", "svgmap")
+        .attr("width", width)
+        .attr("height", height)
+.append("g").attr("id", "mainGroup");
     mainGroup.style({ stroke: "white", "stroke-width": "2px", "stroke-opacity": 0.0 });
 
     // Make variable for the way the map will be projected on the screen and the path.
@@ -99,3 +102,5 @@ function loadMap(data) {
     });
 
 };
+
+loadMap("nld10.json");

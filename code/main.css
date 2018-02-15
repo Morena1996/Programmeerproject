@@ -7,22 +7,22 @@ body{
 	top: 5px;
 	left: 950px;
 }
-#map {
-  position: relative;
-  top: 10px;
-  right: 100px;
+#svgmap {
+  position: absolute;
+  top: 130px;
+  right: 700px;
 }
 
 #barchart {
 	position: relative;
 	left: 400px;
-	top: -330px;
+	top: 100px;
 }
 
 #gauge {
 	position: relative;
 	left: 970px;
-	top: -570px;
+	top: -130px;
 }
 
 #title {

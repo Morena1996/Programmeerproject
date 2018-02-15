@@ -11,10 +11,8 @@ function removeGauge() {
 }
 
 function removeMap() { 
-	d3.select("#map").remove();
+	d3.select("#mapje").remove();
 }
 
-// function removeCheckbox(checkBox) {
-// 	d3.select("#box").remove();       
-// }
+
 
