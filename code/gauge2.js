@@ -1,8 +1,7 @@
 // Function that loads gauge.
 
-
 function loadGauge(percentage) {
-    
+
     var gauge1 = load("fillgauge", percentage);
 
         function NewValue(){
@@ -276,4 +275,5 @@ function loadGauge(percentage) {
 
 
     }
-};
+
+}

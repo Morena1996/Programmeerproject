@@ -19,6 +19,8 @@ function loadMap(data) {
         .attr("class", "tooltip")               
         .style("opacity", 0);
 
+
+
     // // Make variable for the SVG element.
     // var svgmap = d3.select("#map").attr("id", "svgmap").append("svg")
     //     .attr("width", width)
@@ -38,6 +40,10 @@ function loadMap(data) {
         .attr("height", height)
 .append("g").attr("id", "mainGroup");
     mainGroup.style({ stroke: "white", "stroke-width": "2px", "stroke-opacity": 0.0 });
+
+
+
+
 
     // Make variable for the way the map will be projected on the screen and the path.
     var projection = d3.geo.mercator()
@@ -95,12 +101,14 @@ function loadMap(data) {
                     console.log("click")
                     removeGauge();
                     removeBarchart();
+                    loadDropdown(d.properties.married, d.properties.oneparent)
+                    console.log(d.properties.selectValue)
                     loadBarchart(d.properties.name);
-                    loadGauge(d.properties.married);
                 });
 
+            console.log(topojson.feature(nld, nld.objects.subunits).features[1].properties.oneparent)
     });
 
 };
 
-loadMap("nld10.json");
+// loadMap("nld10-2.json");
