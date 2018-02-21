@@ -115,7 +115,3 @@ function d3CheckBox () {
     return checkBox;
 }
 
-
-function checkOut() {
-
-}

@@ -7,46 +7,54 @@ map.js
 File with JavaScript code for map on religion in the Netherlands
 */
 
-// Function that loads the map.
+// Function to load the map.
 function loadMap(data) {
-    // Make variables for the width and height of SVG element.
-    var width = 600,
-        height = 400;
 
-    var color_domain = [50, 150, 350, 750]
-    var ext_color_domain = [0, 50, 150, 350, 750]
+    // Variables for the width, height and margins of the SVG element.
+    var width = 700,
+        height = 400,
+        margin = {top: 50, right: 100, bottom: 80, left: 100};
+
+    // Array for the colours of the provinces.
+    var colour = ["#eff9f8","#caf7f2","#a4fcf2","#7dc6be","#6aa59e","#4e8982","#366d67","#21544e","#0f3a35","#0c0730"]
+
+    // Arrays for the colours the legend.
+    var colour_domain = [50, 60, 70, 80]
+    var colour_domain_ext = [40, 50, 60, 70, 80]
     var legend_labels = ["30% - 40%", "40% - 50%", "50% - 60%", "60% - 70%", "70% - 80%"]
-    var color = d3.scale.threshold()
-        .domain(color_domain)
-        .range(["#7dc6be","#6aa59e","#366d67","#21544e","#0f3a35"]);
+    var colour_legend = d3.scale.threshold()
+        .domain(colour_domain)
+        .range(colour.slice(3,8));
 
-    console.log(color)
-
-    // Make variable for the div element of the tooltip.
-    var div = d3.select("body").append("div")   
-        .attr("class", "tooltip")               
-        .style("opacity", 0);
-
-
-    // This variable links the colours to the quantiles.
+    // Quantize maps the colours for the provinces to the corresponding quantiles.
     var quantize = d3.scale.quantize()
         .domain([0, 100])
         .range(d3.range(0, 100, 10).map(function(i) { return i/10; }));
 
-    // Array of colours to fill in the provinces.
-    var colour = ["#eff9f8","#caf7f2","#a4fcf2","#7dc6be","#6aa59e","#4e8982","#366d67","#21544e","#0f3a35","#0c0730"]
+    // Variable for the div element of the tooltip.
+    var tooltip = d3.select("body").append("div")   
+        .attr("class", "tooltip")               
+        .style("opacity", 0);
 
-    // Append group to SVG element.
-    var mainGroup = d3.select("#map").append("svg").attr("id", "svgmap")
+    // Create SVG element and add group and title.
+    var svgMap = d3.select("#map").append("svg")
+        .attr("id", "svgMap")
         .attr("width", width)
         .attr("height", height)
-    .append("g").attr("id", "mainGroup");
-    
-    mainGroup.style({ stroke: "white", "stroke-width": "2px", "stroke-opacity": 0.0 });
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .append("g").attr("id", "mapGroup")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .style({ stroke: "white", "stroke-width": "2px", "stroke-opacity": 0.0 });
 
-    mainGroup.append("text").attr("x", (width/2)).attr("y", 0 - (height)).attr("text-anchor", "middle").style("font-size", "16px").text("Percentage inwoners dat zichzelf tot kerkelijke gezindte rekent");
+    var mapTitle = svgMap.append("text")
+        .attr("x", (width/2 + 40)).attr("y", 5)
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .text("Percentage inwoners dat zichzelf tot kerkelijke gezindte rekent");
 
-    // Make variable for the way the map will be projected on the screen and the path.
+    // Variable for the way the map will be projected on the screen and the path.
     var projection = d3.geo.mercator()
         .scale(1)
         .translate([0, 0]);
@@ -66,54 +74,54 @@ function loadMap(data) {
                 .scale(s)
                 .translate(t);
 
-            // Make variable for the provinces.
+            // Variable for the provinces.
             var subunits = topojson.feature(nld, nld.objects.subunits).features;
 
-            // Add provinces to the "g" element and colour them according to the data.
-            mainGroup.selectAll("path", "subunits")
+            // Add provinces to the SVG element and colour them according to the data.
+            svgMap.selectAll("path", "subunits")
                 .data(subunits)
                 .enter().append("path")
                 .attr("d", path)
                 .attr("fill", function(d) { return colour[quantize(d.properties.religious)]
                 })
 
-
-            var legend = mainGroup.selectAll("g.legend")
-              .data(ext_color_domain)
+            // Add the legend.
+            var legend = svgMap.selectAll("g.legend")
+              .data(colour_domain_ext)
               .enter().append("g")
               .attr("class", "legend");
 
-              var ls_w = 20, ls_h = 20;
-
-              legend.append("rect")
-              .attr("x", 200)
-              .attr("y", function(d, i){ return height - 200 - (i*ls_h) - 2*ls_h;})
+            var ls_w = 20, ls_h = 20;
+              
+            legend.append("rect")
+              .attr("x", 250)
+              .attr("y", function(d, i){ return height - 230 - (i*ls_h) - 2*ls_h;})
               .attr("width", ls_w)
               .attr("height", ls_h)
-              .style("fill", function(d, i) { return color(d); })
+              .style("fill", function(d, i) { return colour_legend(d); })
               .style("opacity", 0.8);
 
-              legend.append("text")
-              .attr("x", 230)
-              .attr("y", function(d, i){ return height - 200 - (i*ls_h) - ls_h - 4;})
+            legend.append("text")
+              .attr("x", 280)
+              .attr("y", function(d, i){ return height - 230 - (i*ls_h) - ls_h - 4;})
               .text(function(d, i){ return legend_labels[i]; });
 
             // Add tooltip.
-            mainGroup.selectAll("path")
+            svgMap.selectAll("path")
                 .on("mouseover", function (d) {
                     d3.select(this).style("stroke-opacity", 1.0);
-                    div.transition().duration(300)
+                    tooltip.transition().duration(300)
                     .style("opacity", 1)
-                div.text(d.properties.name+ ": " +d.properties.religious+"%")
+                tooltip.text(d.properties.name+ ": " +d.properties.religious+"%")
                     .style("left", d3.event.pageX + "px")
                     .style("top", d3.event.pageY - 30 + "px");
                  })
                 .on("mouseout", function () {
                     d3.select(this)
                     .style("stroke-opacity", 0);
-                    div.transition().duration(0)
+                    tooltip.transition().duration(0)
                     .style("opacity",0.8);
-                    div.transition().duration(0)
+                    tooltip.transition().duration(0)
                     .style("opacity",0);
                 })
                 

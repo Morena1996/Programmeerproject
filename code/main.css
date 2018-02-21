@@ -5,12 +5,13 @@ body{
 #checkBox {
 	position: absolute;
 	top: 5px;
-	left: 950px;
+	right: 0px;
 }
-#svgmap {
+
+#map {
   position: absolute;
-  top: 130px;
-  right: 700px;
+  top: 50px;
+  right: 850px;
 }
 
 #barchart {
@@ -100,5 +101,12 @@ div.tooltip {
   border: 1px;      
   border-radius: 8px;           
   pointer-events: none;         
+}
+
+#subscript {
+	position: absolute;
+	left: 0px;
+	bottom: -0px;
+	font-size: 10px;
 }
 

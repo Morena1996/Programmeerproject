@@ -11,7 +11,7 @@ function removeGauge() {
 }
 
 function removeMap() { 
-	d3.select("#mapje").remove();
+	d3.select("#svgMap").remove();
 }
 
 function removeDropdown() {

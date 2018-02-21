@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
 <head>
+    <meta charset="utf-8">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
     <title id="pageTitle">Ontkerkelijking in Nederland</title>
     <p id="title" font-family="sans-serif">Ontkerkelijking in Nederland</p>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
 <body>
-    <p id="mapTitle">Percentage van de inwoners dat zichzelf tot een kerkelijke gezindte rekent, per provincie</p> 
-    <div class="relative1" id="map">
-        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
-        <script src="remove.js"></script>
+    <script src="remove.js"></script>
+    <div id="map">
         <script src="map.js"></script>
     </div>
-        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
-        <script src="https://d3js.org/topojson.v1.min.js"></script>
-    <div class="relative2" id="barchart">
+    <div id="barchart">
         <script src="barchart.js"></script>
     </div>
-    <div class="relative3" id="gauge">
-        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
+    <div id="gauge">
         <svg id="fillgauge" width="70%" height="300" onclick="gauge.update(NewValue());"></svg>
         <script src="gauge2.js"></script>
     </div>
     <div id="checkBox">
         <script src="checkBox.js"></script>
+        <script src="d3CheckBox.js"></script>
     </div>
-    <div class="relative4" id="dropdown">
-        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
+    <div id="dropdown">
+        <select id="select">
+            <option value="Percentage gehuwden" selected="selected">Percentage gehuwden</option>
+            <option value="Percentage eenoudergezinnen">Percentage eenoudergezinnen</option>
+        </select>
         <script src="dropdown.js"></script>
     </div>
-    <script src="d3CheckBox.js"></script>
-            <select id="select">
-        <option value="Percentage gehuwden" selected="selected">Percentage gehuwden</option>
-        <option value="Percentage eenoudergezinnen">Percentage eenoudergezinnen</option>
-    </select>
     <script src="main.js"></script>
+    <p id="subscript">Morena Bastiaansen | Source: CBS Open Data</p>
 </body> 
 </html>

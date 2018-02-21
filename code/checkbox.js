@@ -30,9 +30,9 @@ function loadCheckBox(){
         .call(checkBox2);
 
     // Remove the last map, gauge and chart and load the selected ones
-    d3.select("#mainGroup").remove();
     removeBarchart();
     removeGauge();
+    removeMap();
     loadMap("nld10-2.json");
 }
 
@@ -68,8 +68,8 @@ function switchCheckBox(){
 
     svgCheckBox.attr("id", "checkBoxes").call(checkBox1).call(checkBox2);
 
-    d3.select("#mainGroup").remove();
     removeBarchart();
+    removeMap();
     removeGauge();
     loadMap("nld15-2.json");
 };
