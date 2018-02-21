@@ -1,6 +1,15 @@
 // Function that loads gauge.
 
 
+/*
+Programmeerproject
+Name: Morena Bastiaansen
+Student number: 10725792
+
+gauge.js
+File with JavaScript code for gauge on religion in the Netherlands
+*/
+
 function loadGauge(percentage) {
     
     var gauge1 = load("fillgauge", percentage);

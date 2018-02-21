@@ -7,13 +7,15 @@ map.js
 File with JavaScript code for map on religion in the Netherlands
 */
 
+
 // Function to load the map.
 function loadMap(data) {
 
     // Variables for the width, height and margins of the SVG element.
-    var width = 700,
-        height = 400,
-        margin = {top: 50, right: 100, bottom: 80, left: 100};
+    var margin = {top: 50, right: 100, bottom: 80, left: 100},
+        width = 700,
+        height = 400;
+        
 
     // Array for the colours of the provinces.
     var colour = ["#eff9f8","#caf7f2","#a4fcf2","#7dc6be","#6aa59e","#4e8982","#366d67","#21544e","#0f3a35","#0c0730"]
@@ -42,14 +44,16 @@ function loadMap(data) {
         .attr("width", width)
         .attr("height", height)
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-        .append("g").attr("id", "mapGroup")
+        .append("g")
+        .attr("id", "mapGroup")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
         .style({ stroke: "white", "stroke-width": "2px", "stroke-opacity": 0.0 });
 
     var mapTitle = svgMap.append("text")
-        .attr("x", (width/2 + 40)).attr("y", 5)
+        .attr("x", (width/2 + 40))
+        .attr("y", 5)
         .attr("text-anchor", "middle")
         .style("font-size", "16px")
         .text("Percentage inwoners dat zichzelf tot kerkelijke gezindte rekent");
