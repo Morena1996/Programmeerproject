@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>
-    <title id="title1">Ontkerkelijking in Nederland</title>
+    <title id="pageTitle">Ontkerkelijking in Nederland</title>
     <p id="title" font-family="sans-serif">Ontkerkelijking in Nederland</p>
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -23,15 +23,18 @@
         <svg id="fillgauge" width="70%" height="300" onclick="gauge.update(NewValue());"></svg>
         <script src="gauge2.js"></script>
     </div>
-    <div id="vis"></div>
+    <div id="checkBox">
+        <script src="checkBox.js"></script>
+    </div>
     <div class="relative4" id="dropdown">
         <script src="https://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
         <script src="dropdown.js"></script>
     </div>
     <script src="d3CheckBox.js"></script>
-    <script src="checkbox.js"></script>
+            <select id="select">
+        <option value="Percentage gehuwden" selected="selected">Percentage gehuwden</option>
+        <option value="Percentage eenoudergezinnen">Percentage eenoudergezinnen</option>
+    </select>
     <script src="main.js"></script>
-
 </body> 
 </html>
-

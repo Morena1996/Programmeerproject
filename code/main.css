@@ -2,7 +2,7 @@ body{
 	background-color: #eff9f8;
 }
 
-#vis {
+#checkBox {
 	position: absolute;
 	top: 5px;
 	left: 950px;
@@ -25,6 +25,15 @@ body{
 	top: -130px;
 }
 
+#select {
+	position: relative;
+	font-size:10px;
+	top: -510px;
+	left: 950px;
+	width:200px;
+	height:30px;
+}
+
 #title {
 	position: relative;
 	left: 370px;
@@ -35,15 +44,14 @@ body{
 
 #mapTitle {
 	position: relative;
-	left: 100px;
+	left: 60px;
 	top: 30px;
-	font-family: "georgia";
-	font-size: 10px;
+	font-size: 16px;
 }
 
 #barChartTitle {
 	position: relative;
-	left: 550px;
+	left: 500px;
 	top: 70px;
 	font-family: "georgia";
 	font-size: 10px;
@@ -75,12 +83,22 @@ body{
   shape-rendering: crispEdges;
 }
 
-.dropdown {
-	position: absolute;
-	left:270px;
-	right:200px;
-	top:30px;
-	font: 10px sans-serif;
-	width:200px;
-	height:10px;
+.legend {
+  position: relative;
+  left:500px;
+  font-size: 12px;
 }
+
+div.tooltip {   
+  position: absolute;           
+  text-align: center;           
+  width: 150px;                  
+  height: 25px;                 
+  padding: 2px;             
+  font-size: 10px;     
+  background: #FFFFE0;
+  border: 1px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+}
+

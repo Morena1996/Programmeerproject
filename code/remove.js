@@ -14,5 +14,9 @@ function removeMap() {
 	d3.select("#mapje").remove();
 }
 
+function removeDropdown() {
+	d3.select("#select").remove();
+}
+
 
 
