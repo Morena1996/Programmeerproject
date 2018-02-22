@@ -1,10 +1,10 @@
 /*
-Programmeerproject
+Programmeerproject: "Ontkerkelijking in Nederland"
 Name: Morena Bastiaansen
 Student number: 10725792
 
-map.js
-File with JavaScript code for map on religion in the Netherlands
+gauge.js
+File with JavaScript code for map for data visualization on religion in the Netherlands
 */
 
 
@@ -12,9 +12,9 @@ File with JavaScript code for map on religion in the Netherlands
 function loadMap(data) {
 
     // Variables for the width, height and margins of the SVG element.
-    var margin = {top: 50, right: 100, bottom: 80, left: 100},
-        width = 700,
-        height = 400;
+    var margin = {top: 10, right: 0, bottom: 80, left: 0},
+        width = 500 - margin.left - margin.right,
+        height = 700 - margin.top - margin.bottom;
         
 
     // Array for the colours of the provinces.
@@ -38,25 +38,14 @@ function loadMap(data) {
         .attr("class", "tooltip")               
         .style("opacity", 0);
 
-    // Create SVG element and add group and title.
+    // Create SVG element and add group.
     var svgMap = d3.select("#map").append("svg")
         .attr("id", "svgMap")
-        .attr("width", width)
-        .attr("height", height)
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-        .append("g")
-        .attr("id", "mapGroup")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .append("g")
+        .attr("id", "mapGroup")
         .style({ stroke: "white", "stroke-width": "2px", "stroke-opacity": 0.0 });
-
-    var mapTitle = svgMap.append("text")
-        .attr("x", (width/2 + 40))
-        .attr("y", 5)
-        .attr("text-anchor", "middle")
-        .style("font-size", "16px")
-        .text("Percentage inwoners dat zichzelf tot kerkelijke gezindte rekent");
 
     // Variable for the way the map will be projected on the screen and the path.
     var projection = d3.geo.mercator()
@@ -93,21 +82,21 @@ function loadMap(data) {
             var legend = svgMap.selectAll("g.legend")
               .data(colour_domain_ext)
               .enter().append("g")
-              .attr("class", "legend");
+              .attr("id", "legend");
 
             var ls_w = 20, ls_h = 20;
               
             legend.append("rect")
-              .attr("x", 250)
-              .attr("y", function(d, i){ return height - 230 - (i*ls_h) - 2*ls_h;})
+              .attr("x", 150)
+              .attr("y", function(d, i){ return height - 330 - (i*ls_h) - 2*ls_h;})
               .attr("width", ls_w)
               .attr("height", ls_h)
               .style("fill", function(d, i) { return colour_legend(d); })
               .style("opacity", 0.8);
 
             legend.append("text")
-              .attr("x", 280)
-              .attr("y", function(d, i){ return height - 230 - (i*ls_h) - ls_h - 4;})
+              .attr("x", 180)
+              .attr("y", function(d, i){ return height - 330 - (i*ls_h) - ls_h - 4;})
               .text(function(d, i){ return legend_labels[i]; });
 
             // Add tooltip.
@@ -116,7 +105,7 @@ function loadMap(data) {
                     d3.select(this).style("stroke-opacity", 1.0);
                     tooltip.transition().duration(300)
                     .style("opacity", 1)
-                tooltip.text(d.properties.name+ ": " +d.properties.religious+"%")
+                    tooltip.text(d.properties.name+ ": " +d.properties.religious+"%")
                     .style("left", d3.event.pageX + "px")
                     .style("top", d3.event.pageY - 30 + "px");
                  })

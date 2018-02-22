@@ -1,15 +1,16 @@
-// Function that loads gauge.
-
-
 /*
-Programmeerproject
+Programmeerproject: "Ontkerkelijking in Nederland"
 Name: Morena Bastiaansen
 Student number: 10725792
 
 gauge.js
-File with JavaScript code for gauge on religion in the Netherlands
+File with JavaScript code for gauge for data visualization on religion in the Netherlands
+
+Source: http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6
 */
 
+
+// Function that loads gauge.
 function loadGauge(percentage) {
     
     var gauge1 = load("fillgauge", percentage);
@@ -21,6 +22,7 @@ function loadGauge(percentage) {
                     return (Math.random()*100).toFixed(1);
                 }
             }
+
     function load(elementId, value, config) {
         if(config == null) config = settings();
 

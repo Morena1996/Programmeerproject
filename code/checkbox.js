@@ -1,3 +1,12 @@
+/*
+Programmeerproject: "Ontkerkelijking in Nederland"
+Name: Morena Bastiaansen
+Student number: 10725792
+
+checkbox.js
+File with JavaScript code to load checkboxes for data visualization on religion in the Netherlands.
+*/
+
 
 // Function to load the check boxes
 function loadCheckBox(){
@@ -33,7 +42,7 @@ function loadCheckBox(){
     removeBarchart();
     removeGauge();
     removeMap();
-    loadMap("nld10-2.json");
+    loadMap("nld10.json");
 }
 
 // Function that switches the marked check box
@@ -71,5 +80,5 @@ function switchCheckBox(){
     removeBarchart();
     removeMap();
     removeGauge();
-    loadMap("nld15-2.json");
+    loadMap("nld15.json");
 };

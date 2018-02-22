@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
 <head>
-    <title id="title1">Ontkerkelijking in Nederland</title>
+    <meta charset="utf-8">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <title id="pageTitle">Ontkerkelijking in Nederland</title>
     <p id="title" font-family="sans-serif">Ontkerkelijking in Nederland</p>
     <link rel="stylesheet" type="text/css" href="ontkerkelijking.css">
 </head>
 <body>
-    <p id="mapTitle">Percentage van de inwoners dat zichzelf tot een kerkelijke gezindte rekent, per provincie</p> 
-    <p id="barChartTitle">Verdeling van de frequentie in kerkbezoeken voor de geselecteerde provincie</p>
-    <p id="gaugeTitle">Percentage van de inwoners dat gehuwd is voor de geselecteerde provincie</p>
-    <div class="relative1" id="map"></div>
-    <div id="barchart"></div>
-    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
-    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="remove.js"></script>
+    <div id="map">
+        <p id="mapTitle1">Percentage gelovigen</p>
+        <p id="mapTitle2">Op de kaart hieronder wordt per provincie het percentage</p>
+        <p id="mapTitle3">inwoners weergegeven dat zichzelf tot een kerkelijke gezindte</p>
+        <p id="mapTitle4">rekent. Klik op een provincie voor meer informatie.</p>
+        <script src="map.js"></script>
+    </div>
+    <div id="barchart">
+        <p id="barTitle1">Frequentie kerkbezoek</p>
+        <p id="barTitle2">De grafiek hieronder geeft voor de geselecteerde provincie</p>
+        <p id="barTitle3">de verdeling weer van de frequentie in kerkbezoek.</p>
+        <p id="barTitle4">Hoe vaak gaan de inwoners ook daadwerkelijk naar het gebedshuis?</p>
+        <script src="barchart.js"></script>
+    </div>
     <div id="gauge">
-    <svg id="fillgauge" width="70%" height="300" onclick="gauge.update(NewValue());"></svg>
-</div>
-    <script src="ontkerkelijking.js"></script>
+        <svg id="fillgauge" width="70%" height="300" onclick="gauge.update(NewValue());"></svg>
+        <script src="gauge.js"></script>
+    </div>
+    <div id="checkBox">
+        <script src="checkBox.js"></script>
+        <script src="d3CheckBox.js"></script>
+    </div>
+    <div id="dropdown">
+        <select id="drop">
+            <option value="Percentage gehuwden" selected="selected">Percentage gehuwden</option>
+            <option value="Percentage eenoudergezinnen">Percentage eenoudergezinnen</option>
+        </select>
+        <script src="dropdown.js"></script>
+    </div>
+    <script src="main.js"></script>
+    <p id="subscript">Morena Bastiaansen | Source: CBS Open Data</p>
 </body> 
 </html>
-

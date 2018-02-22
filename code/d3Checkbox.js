@@ -1,4 +1,14 @@
-/* Reusable, pure d3 Checkbox */
+/*
+Programmeerproject: "Ontkerkelijking in Nederland"
+Name: Morena Bastiaansen
+Student number: 10725792
+
+checkbox.js
+File with JavaScript code for D3 checkboxes for data visualization on religion in the Netherlands
+
+Source: https://bl.ocks.org/Lulkafe/c77a36d5efb603e788b03eb749a4a714
+*/
+
 
 function d3CheckBox () {
 
@@ -7,8 +17,6 @@ function d3CheckBox () {
         y = 0,
         rx = 0,
         ry = 0,
-        markStrokeWidth = 3,
-        boxStrokeWidth = 3,
         checked = false,
         clickEvent;
 
@@ -24,8 +32,7 @@ function d3CheckBox () {
             .attr("ry", ry)
             .style({
                 "fill-opacity": 0,
-                "stroke-width": boxStrokeWidth,
-                "stroke": "black"
+                "stroke": "#21544e"
             });
 
         //Data to represent the check mark
@@ -43,8 +50,7 @@ function d3CheckBox () {
         var mark = g.append("path")
             .attr("d", line(coordinates))
             .style({
-                "stroke-width" : markStrokeWidth,
-                "stroke" : "black",
+                "stroke" : "#21544e",
                 "fill" : "none",
                 "opacity": (checked)? 1 : 0
             });

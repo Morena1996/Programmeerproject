@@ -1,10 +1,10 @@
 /*
-Programmeerproject
+Programmeerproject: "Ontkerkelijking in Nederland"
 Name: Morena Bastiaansen
 Student number: 10725792
 
 barchart.js
-File with JavaScript code for bar chart on religion in the Netherlands
+File with JavaScript code for barchart for data visualization on religion in the Netherlands
 */
 
 
@@ -16,6 +16,11 @@ function loadBarchart(provincie){
         width = 600 - margin.left - margin.right,
         height = 300 - margin.top - margin.bottom;
 
+    // Variable for the div element of the tooltip.
+    var tooltip = d3.select("body").append("div")   
+        .attr("class", "tooltip")               
+        .style("opacity", 0);
+
     // Create SVG element and add group and title.
     var chart = d3.select("#barchart").append("svg")
         .attr("id", "chart")
@@ -25,12 +30,6 @@ function loadBarchart(provincie){
         .attr("id", "chartGroup")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     
-    var chartTitle = chart.append("text")
-        .attr("x", (width/2))
-        .attr("y", 0 - (margin.top/2))
-        .attr("text-anchor", "middle").style("font-size", "16px")
-        .text("Frequentie kerkbezoek voor geselecteerde provincie");
-
     // Load JSON data.
     d3.json("kerkelijke_bezoeken.json", function(error, data){
 
@@ -93,11 +92,25 @@ function loadBarchart(provincie){
             .attr("y", function(d){
                 return y(+d[selection]);
             })
-            .append("title")
-            .text(function(d){
-                return (d.frequentie + ": " + d[selection] + "%");
-            });
 
+        // Add tooltip.
+        chart.selectAll("rect")
+            .on("mouseover", function (d) {
+                d3.select(this).style("stroke-opacity", 1.0);
+                tooltip.transition().duration(300)
+                .style("opacity", 1)
+                tooltip.text(d.frequentie+ ": " +d[selection]+"%")
+                .style("left", d3.event.pageX + "px")
+                .style("top", d3.event.pageY - 30 + "px");
+            })
+            .on("mouseout", function () {
+                    d3.select(this)
+                    .style("stroke-opacity", 0);
+                    tooltip.transition().duration(0)
+                    .style("opacity",0.8);
+                    tooltip.transition().duration(0)
+                    .style("opacity",0);
+            });
     });
 
 };
