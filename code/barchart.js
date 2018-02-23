@@ -68,6 +68,7 @@ function loadBarchart(provincie){
             .call(xAxis)
             .selectAll("text")
             .style("font-size", "10px")
+            .style("font-family", "Lato")
             .style("text-anchor", "end")
             .attr("dx", "-.8em")
             .attr("dy", "-.55em")

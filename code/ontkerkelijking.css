@@ -17,13 +17,6 @@ body{
 
 }
 
-#jemoeder {
-	position: relative;
-	top: 0px;
-	left:0px;
-	right:0px;
-}
-
 #svgMap {
 	position: absolute;
 	top: 60px;
@@ -34,7 +27,6 @@ body{
 	position: relative;
 	font-family: 'Lato', sans-serif;
 	font-size: 24px;
-	font-weight: 500;
 	left: 120px;
 	top: 50px;
 	color: #0f3a35;
@@ -44,7 +36,6 @@ body{
 	position: relative;
 	font-family: 'Lato', sans-serif;
 	font-size: 11px;
-	font-weight: 500;
 	left: 120px;
 	top: 40px;
 	color: #7dc6be;
@@ -54,7 +45,6 @@ body{
 	position: relative;
 	font-family: 'Lato', sans-serif;
 	font-size: 11px;
-	font-weight: 500;
 	left: 120px;
 	top: 30px;
 	color: #7dc6be;
@@ -64,7 +54,6 @@ body{
 	position: relative;
 	font-family: 'Lato', sans-serif;
 	font-size: 11px;
-	font-weight: 500;
 	left: 120px;
 	top: 20px;
 	color: #7dc6be;
@@ -77,7 +66,7 @@ body{
 
 #barchart {
 	position: absolute;
-	left: 400px;
+	left: 350px;
 	top: 230px;
 }
 
@@ -85,9 +74,8 @@ body{
 	position: relative;
 	font-family: 'Lato', sans-serif;
 	font-size: 24px;
-	font-weight: 500;
-	left: 200px;
-	top: -100px;
+	left: 120px;
+	top: -400px;
 	color: #0f3a35;
 }
 
@@ -95,9 +83,8 @@ body{
 	position: relative;
 	font-family: 'Lato', sans-serif;
 	font-size: 11px;
-	font-weight: 500;
-	left: 400px;
-	top: 40px;
+	left: 120px;
+	top: -410px;
 	color: #7dc6be;
 }
 
@@ -105,9 +92,8 @@ body{
 	position: relative;
 	font-family: 'Lato', sans-serif;
 	font-size: 11px;
-	font-weight: 500;
-	left: 400px;
-	top: 30px;
+	left: 120px;
+	top: -420px;
 	color: #7dc6be;
 }
 
@@ -115,23 +101,41 @@ body{
 	position: relative;
 	font-family: 'Lato', sans-serif;
 	font-size: 11px;
-	font-weight: 500;
-	left: 400px;
-	top: 20px;
+	left: 120px;
+	top: -430px;
 	color: #7dc6be;
 }
 
 #gauge {
+	position: absolute;
+	left: 940px;
+	top: 300px;
+}
+
+#gaugeTitle1 {
 	position: relative;
-	left: 970px;
-	top: -130px;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	left: -20px;
+	top: -420px;
+	color: #0f3a35;
+}
+
+#gaugeTitle2 { 
+	position: relative;
+	font-family: 'Lato', sans-serif;
+	font-size: 11px;
+	left: -20px;
+	top: -430px;
+	color: #7dc6be;
 }
 
 #drop {
-	position: relative;
+	position: absolute;
+	font-family: "Lato", sans-serif;
 	font-size:10px;
-	top: -510px;
-	left: 950px;
+	top: -35px;
+	left: -20px;
 	width:200px;
 	height:30px;
 }
@@ -197,6 +201,7 @@ div.tooltip {
 
 #subscript {
 	position: absolute;
+	font-family: "Lato", sans-serif;
 	left: 0px;
 	bottom: -0px;
 	font-size: 10px;

@@ -9,6 +9,7 @@
 </head>
 <body>
     <script src="remove.js"></script>
+    <script src="create.js"></script>
     <div id="map">
         <p id="mapTitle1">Percentage gelovigen</p>
         <p id="mapTitle2">Op de kaart hieronder wordt per provincie het percentage</p>
@@ -17,28 +18,24 @@
         <script src="map.js"></script>
     </div>
     <div id="barchart">
-        <p id="barTitle1">Frequentie kerkbezoek</p>
-        <p id="barTitle2">De grafiek hieronder geeft voor de geselecteerde provincie</p>
-        <p id="barTitle3">de verdeling weer van de frequentie in kerkbezoek.</p>
-        <p id="barTitle4">Hoe vaak gaan de inwoners ook daadwerkelijk naar het gebedshuis?</p>
         <script src="barchart.js"></script>
     </div>
     <div id="gauge">
-        <svg id="fillgauge" width="70%" height="300" onclick="gauge.update(NewValue());"></svg>
         <script src="gauge.js"></script>
+        <svg id="fillgauge" width="70%" height="300" onclick="gauge.update(NewValue());"></svg>
     </div>
     <div id="checkBox">
         <script src="checkBox.js"></script>
         <script src="d3CheckBox.js"></script>
     </div>
     <div id="dropdown">
-        <select id="drop">
+<!--         <select id="drop">
             <option value="Percentage gehuwden" selected="selected">Percentage gehuwden</option>
             <option value="Percentage eenoudergezinnen">Percentage eenoudergezinnen</option>
-        </select>
+        </select> -->
         <script src="dropdown.js"></script>
     </div>
     <script src="main.js"></script>
-    <p id="subscript">Morena Bastiaansen | Source: CBS Open Data</p>
+    <p id="subscript">Morena Bastiaansen | Bron: CBS Open Data</p>
 </body> 
 </html>

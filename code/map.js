@@ -55,6 +55,18 @@ function loadMap(data) {
     var path = d3.geo.path()
         .projection(projection);
 
+    // Function to add the titles to the other visualizations once a province is clicked.
+    function makeTitle(titleId, text, id) {
+        
+        // Create "p" element and append ID and text.
+        var title = document.createElement("p");
+        title.id = titleId;
+        var node = document.createTextNode(text);
+        title.appendChild(node);
+        var element = document.getElementById(id);
+        element.appendChild(title);        
+    }
+
     // Load JSON data.
     d3.json(data, function(error, nld) {
 
@@ -118,13 +130,26 @@ function loadMap(data) {
                     .style("opacity",0);
                 })
                 
-                //Add functionality that calls functions loadBarchart and loadGauge when province is clicked.
+                //Add functionality that calls functions to load the bar chart and the gauge when a province is clicked.
                 .on("click", function (d) {
                     removeGauge();
                     removeBarchart();
-                    loadDropdown(d.properties.married, d.properties.oneparent);
+                    removeTitle("#gaugeTitle1");
+                    removeTitle("#gaugeTitle2")
+                    removeTitle("#barTitle1");
+                    removeTitle("#barTitle2");
+                    removeTitle("#barTitle3");
+                    removeTitle("#barTitle4");
+                    loadDropdown(d.properties.married, d.properties.oneparent, "Percentage gehuwden", "Percentage eenoudergezinnen");
                     loadBarchart(d.properties.name);
+                    makeTitle("barTitle1", "Frequentie kerkbezoek: " + d.properties.name, "barchart");
+                    makeTitle("barTitle2", "De grafiek hieronder geeft voor de geselecteerde provincie de verdeling", "barchart");
+                    makeTitle("barTitle3", "weer van de frequentie in kerkbezoek onder de inwoners.", "barchart");
+                    makeTitle("barTitle4", "Hoe vaak gaan de inwoners naar het gebedshuis?", "barchart");
+                    makeTitle("gaugeTitle1", "Het percentage gehuwden en eenoudergezinnen in "+ d.properties.name, "gauge");
+                    makeTitle("gaugeTitle2", "Selecteer hieronder een optie.", "gauge");
                 });
+
 
     });
 

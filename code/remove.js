@@ -1,6 +1,3 @@
-// function removeSVG(id) {
-// 	d3.select(id).remove();
-// }
 
 function removeBarchart() {
     d3.select("#chart").remove();
@@ -15,8 +12,9 @@ function removeMap() {
 }
 
 function removeDropdown() {
-	d3.select("#select").remove();
+	d3.select("#drop").remove();
 }
 
-
-
+function removeTitle(id) {
+	d3.select(id).remove();
+}
