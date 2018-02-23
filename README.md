@@ -2,7 +2,7 @@
 
 GitHub Pages:  https://morena1996.github.io/Programmeerproject/
 
-Product demo: https://www.youtube.com/watch?v=IOfk0inRnvA&feature=youtu.be
+Product demo: https://youtu.be/IOfk0inRnvA
 ------------
 Probleemstelling
 ----------------
