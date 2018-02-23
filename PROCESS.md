@@ -99,5 +99,5 @@ Vandaag heb ik mijn verslag geschreven en de README.md gefikst.
 
 &nbsp;
 
-# <span style="font-size:larger;">Extra tijd</span>
+# __Extra tijd:__
 ----------
