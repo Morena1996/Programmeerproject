@@ -150,7 +150,6 @@ function loadMap(data) {
                     makeTitle("gaugeTitle2", "Selecteer hieronder een optie.", "gauge");
                 });
 
-
     });
 
 };
