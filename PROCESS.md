@@ -97,7 +97,7 @@ Vandaag heb ik de interactiviteit van mijn visualisaties gefikst. Dit heb ik ged
 
 Vandaag heb ik mijn verslag geschreven en de README.md gefikst.
 
-
+&nbsp;
 
 # Extra tijd
 ----------
